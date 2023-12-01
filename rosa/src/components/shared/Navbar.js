@@ -10,16 +10,13 @@ const Nav = () => {
           <img width={240} src={Logo} alt="logo" />
         </span>
       </Navbar.Brand>
-      <Navbar.Toggle className="" />
-      <Navbar.Collapse className="">
-        <Navbar.Link className="" href="#" active>
+      <Navbar.Toggle />
+      <Navbar.Collapse>
+        <Navbar.Link href="#" active>
           Home
         </Navbar.Link>
-        <Navbar.Link className= " "href="#">
-          About Us
-        </Navbar.Link>
         <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Promotions</Navbar.Link>
+        <Navbar.Link href="#">Price</Navbar.Link>
         <Navbar.Link href="#">Contact</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
