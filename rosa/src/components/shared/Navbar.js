@@ -1,6 +1,5 @@
 import { Navbar } from "flowbite-react";
 import Logo from '../../assets/rosaLogo.png'
-import Hero from '../../assets/heroSection.png'
 
 const Nav = () => {
   return (
