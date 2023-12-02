@@ -9,7 +9,7 @@ const HeroSection = () => {
           <button className="px-6 py-2 bg-[#DF66A7] rounded-full font-bold text-white hover:bg-opacity-90"> Request Service </button>
         </div>
         <div className="my-auto">
-          <img className="max-w-[600px]" src={Hero} alt="painting" />
+          <img className="max-w-[600px] hover:opacity-90" src={Hero} alt="painting" />
         </div>
       </div>
     </>
