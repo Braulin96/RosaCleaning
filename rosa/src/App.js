@@ -3,11 +3,10 @@ import HeroSection from "./components/shared/HeroSection";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <HeroSection />
     </div>
   );
 }
-
 export default App;
