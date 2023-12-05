@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useState } from "react";
 const cleaningService = [
   {
     name: "Residencial Cleaning",
@@ -29,17 +29,22 @@ const cleaningService = [
 ];
 
 const Services = () => {
+    const [currentIndex, setCurrentIndex] = useState (0) 
   return (
     <div className="flex flex-col h-[700px] max-w-7xl mx-auto px-4 flex-wrap bg-red-500">
       <div className="my-4">
         <h1 className="text-3xl text-white my-4">Our services</h1>
       </div>
-
-      <ul className="list-disc mx-auto">
-        {cleaningService.map((service, index) => (
-          <li key={index}> {service.name}</li>
-        ))}
-      </ul>
+      <div className="flex mx-auto space-x-10">
+        <ul className="list-disc mx-auto">
+          {cleaningService.map((service, index) => (
+            <li onClick={()=> setCurrentIndex (index)} key={index}> {service.name}</li>
+          ))}
+        </ul>
+        <div>
+          <p className="text-white">{cleaningService[currentIndex].description}</p>
+        </div>
+      </div>
     </div>
   );
 };
