@@ -31,7 +31,7 @@ const cleaningService = [
 const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
-    <div className="flex flex-col h-[700px] max-w-7xl mx-auto px-4 flex-wrap bg-cyan-500">
+    <div className="flex flex-col h-[700px] max-w-7xl mx-auto px-4 flex-wrap bg-cyan-500 ">
       <div className="my-4">
         <h1 className="text-3xl text-white my-4">Our services</h1>
       </div>
@@ -39,7 +39,7 @@ const Services = () => {
         <ul className="list-disc mx-auto">
           {cleaningService.map((service, index) => (
             <li
-              className={index === currentIndex ? "text-red-500" : ""}
+              className={index === currentIndex ? "text-red-500 cursor-pointer text-xl" : "cursor-pointer"}
               onClick={() => setCurrentIndex(index)}
               key={index}
             >
