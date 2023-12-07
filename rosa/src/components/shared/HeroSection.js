@@ -15,9 +15,9 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="sm:my-auto">
+        <div className="sm:mt-auto">
           <img
-            className="sm:w-[30rem] sm:min-w-[20rem] sm:max-w-[30rem] max-w-[20rem] hover:opacity-90 sm:mt-0 -mt-14"
+            className="sm:w-[30rem] sm:min-w-[20rem] sm:max-w-[30rem] max-w-[20rem] hover:opacity-90"
             src={Hero}
             alt="painting"
           />

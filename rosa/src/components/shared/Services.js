@@ -34,19 +34,23 @@ const cleaningService = [
 const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
-    <div className="flex mb-44 flex-col relative max-w-7xl mx-auto px-4 flex-wrap h-[600px] justify-center">
-      <div className="z-20 flex flex-col">
-        <div className="my-4">
-          <h1 className="text-3xl  my-4">Our services</h1>
+    <div className="flex relative max-w-7xl bg-gradient-to-br from-[#78CCF5] via-[#d5effc] to-white mx-auto px-4 flex-wrap h-[600px] justify-center gap-8">
+      <div className="sm:flex hidden w-1/3 my-auto  h-full p-10">
+        <div className=" bg-cyan-400 rounded-lg flex h-full justify-center">
+          image goes here
         </div>
-        <div className="flex mx-auto space-x-10">
-          <ul className="list-disc mt-4 w-40">
+      </div>
+
+      <div className="z-20 flex flex-col w-1/2 my-auto">
+        <h1 className="text-3xl  my-4">Our services</h1>
+        <div className="flex mr-24">
+          <ul className="list-disc mt-4 w-60 ml-4">
             {cleaningService.map((service, index) => (
               <li
                 className={
                   index === currentIndex
-                    ? "text-[#DF66A7] cursor-pointer font-semibold text-2xl mb-4"
-                    : "cursor-pointer mb-4 text-lg"
+                    ? "text-[#DF66A7] cursor-pointer font-semibold text-3xl mb-4"
+                    : "cursor-pointer mb-4 text-xl"
                 }
                 onClick={() => setCurrentIndex(index)}
                 key={index}
@@ -55,7 +59,7 @@ const Services = () => {
               </li>
             ))}
           </ul>
-          <div className=" my-auto ">
+          <div>
             <div className="w-56 bg-[#5591AE] text-white font-semibold rounded-2xl overflow-hidden ">
               <div className="p-4 h-56 w-56">
                 <p className="text-white">
@@ -67,12 +71,10 @@ const Services = () => {
                 Request
               </button>
             </div>
+
             <div className="w-60 h-4 mt-10 bg-black rounded-full blur-xl "></div>
           </div>
         </div>
-      </div>
-      <div className="absolute top-1/5 z-10">
-        <img width={1200} style={{ fontSize: "10px" }} src={background} />
       </div>
     </div>
   );
