@@ -17,7 +17,7 @@ function Testimonial() {
            
             <div className="border-t-2 flex mt-auto">
               <div className="flex gap-4 mt-2">
-                <div className="text-sm flex-grow">
+                <div className="text-xs flex-grow">
                   <p>Marie Jones</p>
                   <p>Director at H&M</p>
                 </div>
