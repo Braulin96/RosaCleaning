@@ -34,9 +34,9 @@ const cleaningService = [
 const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
-    <div className="flex relative bg-gradient-to-t from-[#f8e4e5] via-white to-white mx-auto flex-wrap h-[600px] ">
+    <div className="flex relative bg-gradient-to-t from-[#f8e4e5] via-white to-white mx-auto flex-wrap h-[700px] ">
       <div
-        className="flex mx-auto max-w-7xl flex-col mt-8 w-full"
+        className="flex mx-auto max-w-7xl flex-col my-20 w-full"
         style={{ width: "100%" }}
       >
         <h1 className="text-4xl my-4 text-gray-700 w-full">Our services</h1>
