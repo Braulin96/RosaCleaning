@@ -1,11 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import phone from "../../assets/iPhone.png";
-import background from "../../assets/background.png";
-import rosa from "../../assets/rosaLogo.png";
-import IMac from "../../assets/iMac.png";
+
+
 import FirstHouse from "../../assets/house.jpeg";
-import SecondHouse from "../../assets/houseSecond.jpeg";
+
 
 const cleaningService = [
   {

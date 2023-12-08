@@ -2,6 +2,9 @@ import React from "react";
 import Profile from "../assets/profile.jpeg";
 import { VscQuote } from "react-icons/vsc";
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css';
+
 const test = [
   {
     name: "Marie Jonh",
@@ -60,6 +63,7 @@ const Testimonial = () => {
     <>
       <div className="flex relative bg-gradient-to-t from-[#bcbdbb] via-white to-white mx-auto flex-wrap h-[600px] ">
         <div className="flex max-w-7xl justify-around w-full mx-auto">
+          
           {test.map((details, index) => (
             <ModuleTestimonial
               key={index}
