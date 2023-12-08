@@ -1,7 +1,5 @@
 import React from "react";
 import { useState } from "react";
-
-
 import FirstHouse from "../../assets/house.jpeg";
 
 
@@ -48,8 +46,9 @@ const Services = () => {
               <li
                 className={
                   index === currentIndex
-                    ? "cursor-pointer font-semibold text-xl border-gray-300 mb-6 rounded-lg p-2 bg-gray-100"
-                    : "cursor-pointer mb-6 text-xl border-2 border-gray-300 rounded-lg p-2"
+                    ? "cursor-pointer mb-6 text-xl border-2 border-gray-300 rounded-lg p-2 font-semibold "
+                    : 
+                    "cursor-pointer text-xl border-gray-300 mb-6 rounded-lg p-2 bg-gray-100"
                 }
                 //onClick={() => setCurrentIndex(index)}
                 onMouseEnter={() => setCurrentIndex(index)}
@@ -62,14 +61,14 @@ const Services = () => {
 
           <div className="my-auto w-1/2">
             <h1 className="text-2xl text-center mb-4">
-              What does the house cleaning
+              What does the {cleaningService[currentIndex].name}
             </h1>
             <div className="font-semibold rounded-2xl overflow-hidden gap-4 ">
               <div className="flex justify-between gap-8">
                 <p className="text-gray-600 p-2">
                   {cleaningService[currentIndex].description}
                 </p>
-                <img className="w-1/2 " src={FirstHouse} />
+                <img className="w-1/2" src={FirstHouse} />
               </div>
               <button className="bg-white w-full mt-auto py-2 text-[#675a5b] text-lg font-bold">
                 Request
