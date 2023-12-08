@@ -3,32 +3,35 @@ import { useState } from "react";
 import phone from "../../assets/iPhone.png";
 import background from "../../assets/background.png";
 import rosa from "../../assets/rosaLogo.png";
-import IMac from '../../assets/iMac.png'
+import IMac from "../../assets/iMac.png";
+import FirstHouse from "../../assets/house.jpeg";
+import SecondHouse from "../../assets/houseSecond.jpeg";
+
 const cleaningService = [
   {
-    name: "Residencial",
+    name: "Residencial Cleaning",
     description:
-      "Typical residential cleaning tasks include dusting, vacuuming, mopping floors, cleaning kitchen appliances, sanitizing bathrooms, and tidying up common areas",
+      "Our house service doesn’t just cover one or two rooms, we cover the whole house or apartment, from top to bottom. This means that not only will your kitchen be hygienic and safe for cooking, your dining room a healthier place for eating, and your living room a comfier, cleaner place for relaxing, but we will also make sure that the stairs, landing, bathrooms, and bedrooms are all spotless, too.",
   },
   {
-    name: "Office",
+    name: "Office Cleaning",
     description:
-      "Typical office cleaning tasks include dusting, vacuuming, mopping floors, cleaning kitchen appliances, sanitizing bathrooms, and tidying up common areas",
+      "Our Office service doesn’t just cover one or two rooms, we cover the whole house or apartment, from top to bottom. This means that not only will your kitchen be hygienic and safe for cooking, your dining room a healthier place for eating, and your living room a comfier, cleaner place for relaxing, but we will also make sure that the stairs, landing, bathrooms, and bedrooms are all spotless, too.",
   },
   {
-    name: "Deep",
+    name: "Deep Cleaning",
     description:
-      "Typical events Deep cleaning tasks include dusting, vacuuming, mopping floors, cleaning kitchen appliances, sanitizing bathrooms, and tidying up common areas",
+      "Our Deep service doesn’t just cover one or two rooms, we cover the whole house or apartment, from top to bottom. This means that not only will your kitchen be hygienic and safe for cooking, your dining room a healthier place for eating, and your living room a comfier, cleaner place for relaxing, but we will also make sure that the stairs, landing, bathrooms, and bedrooms are all spotless, too.",
   },
   {
-    name: "Moving in/out ",
+    name: "Moving in/out Cleaning",
     description:
-      "Typical office moving tasks include dusting, vacuuming, mopping floors, cleaning kitchen appliances, sanitizing bathrooms, and tidying up common areas",
+      "Our Moving service doesn’t just cover one or two rooms, we cover the whole house or apartment, from top to bottom. This means that not only will your kitchen be hygienic and safe for cooking, your dining room a healthier place for eating, and your living room a comfier, cleaner place for relaxing, but we will also make sure that the stairs, landing, bathrooms, and bedrooms are all spotless, too.",
   },
   {
-    name: "Special Event",
+    name: "Special Event Cleaning",
     description:
-      "Typical events cleaning tasks include dusting, vacuuming, mopping floors, cleaning kitchen appliances, sanitizing bathrooms, and tidying up common areas",
+      "Our Special service doesn’t just cover one or two rooms, we cover the whole house or apartment, from top to bottom. This means that not only will your kitchen be hygienic and safe for cooking, your dining room a healthier place for eating, and your living room a comfier, cleaner place for relaxing, but we will also make sure that the stairs, landing, bathrooms, and bedrooms are all spotless, too.",
   },
 ];
 
@@ -36,46 +39,43 @@ const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
     <div className="flex relative bg-gradient-to-t from-[#f8e4e5] via-white to-white mx-auto flex-wrap h-[600px] ">
-      <div className="flex max-w-7xl justify-around w-full mx-auto">
-        <div className="sm:flex hidden w-1/3 my-auto  h-full p-10">
-          <div className="rounded-lg flex h-full justify-center">
-            <img  src={IMac} />
-          </div>
-        </div>
+      <div
+        className="flex mx-auto max-w-7xl flex-col mt-8 w-full"
+        style={{ width: "100%" }}
+      >
+        <h1 className="text-4xl my-4 text-gray-700 w-full">Our services</h1>
+        <div className="flex justify-between w-full" style={{ width: "100%" }}>
+          <ul className="ml-8 text-gray-700 text-center w-1/3 mt-10">
+            {cleaningService.map((service, index) => (
+              <li
+                className={
+                  index === currentIndex
+                    ? "cursor-pointer font-semibold text-xl border-gray-300 mb-6 rounded-lg p-2 bg-gray-100"
+                    : "cursor-pointer mb-6 text-xl border-2 border-gray-300 rounded-lg p-2"
+                }
+                //onClick={() => setCurrentIndex(index)}
+                onMouseEnter={() => setCurrentIndex(index)}
+                key={index}
+              >
+                {service.name}
+              </li>
+            ))}
+          </ul>
 
-        <div className="flex flex-col my-auto">
-          <h1 className="text-4xl my-4 text-gray-700">Our services</h1>
-          <div className="flex mr-24">
-            <ul className="list-disc mt-4 w-60 ml-4 text-gray-700">
-              {cleaningService.map((service, index) => (
-                <li
-                  className={
-                    index === currentIndex
-                      ? "cursor-pointer font-semibold text-2xl mb-4"
-                      : "cursor-pointer mb-4 text-xl"
-                  }
-                  //onClick={() => setCurrentIndex(index)}
-                  onMouseEnter={() => setCurrentIndex(index)}
-                  key={index}
-                >
-                  {service.name}
-                </li>
-              ))}
-            </ul>
-            <div>
-              <div className="w-56 bg-[#5591AE] text-white font-semibold rounded-2xl overflow-hidden ">
-                <div className="p-4 h-56 w-56">
-                  <p className="text-white">
-                    {cleaningService[currentIndex].description}
-                  </p>
-                </div>
-
-                <button className="bg-white w-full mt-auto py-2 text-[#675a5b] text-lg font-bold">
-                  Request
-                </button>
+          <div className="my-auto w-1/2">
+            <h1 className="text-2xl text-center mb-4">
+              What does the house cleaning
+            </h1>
+            <div className="font-semibold rounded-2xl overflow-hidden gap-4 ">
+              <div className="flex justify-between gap-8">
+                <p className="text-gray-600 p-2">
+                  {cleaningService[currentIndex].description}
+                </p>
+                <img className="w-1/2 " src={FirstHouse} />
               </div>
-
-              <div className="w-60 h-4 mt-10 bg-black rounded-full blur-2xl"></div>
+              <button className="bg-white w-full mt-auto py-2 text-[#675a5b] text-lg font-bold">
+                Request
+              </button>
             </div>
           </div>
         </div>
