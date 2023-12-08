@@ -2,7 +2,7 @@ import Hero from "../../assets/heroSection.png";
 
 const HeroSection = () => {
   return (
-    <>
+    <div className="bg-gradient-to-b from-white via-white to-[#d5effc]">
       <div className="flex justify-around h-[700px] max-w-7xl mx-auto px-4 flex-wrap">
         <div className="my-auto space-y-4">
           <h1 className=" sm:text-3xl md:text-4xl text-2xl sm:leading-relaxed">
@@ -28,7 +28,7 @@ const HeroSection = () => {
             </button>
           </div>
       </div>
-    </>
+    </div>
   );
 };
 export default HeroSection;
