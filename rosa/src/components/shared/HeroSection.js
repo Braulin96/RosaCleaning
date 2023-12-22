@@ -2,16 +2,20 @@ import Hero from "../../assets/heroSection.png";
 
 const HeroSection = () => {
   return (
-    <div className="bg-gradient-to-b from-white via-white to-[#d5effc]">
+    <div className="bg-white">
       <div className="flex justify-around h-[700px] max-w-7xl mx-auto px-4 flex-wrap">
         <div className="my-auto space-y-4">
-          <h1 className=" sm:text-3xl md:text-4xl text-2xl sm:leading-relaxed">
-            Welcome to RosaCleaning <br />
-            Where Cleanliness Meets Excellence!
+          <h1 className="text-[40px] font-semibold">
+            The best <span className="text-[#0171E3] mr-2">Cleaning Service</span> 
+            <br />
+            Transforming Spaces, Elevating Lives
           </h1>
-          <div className="sm:pt-0 pt-4 sm:flex hidden">
-            <button className="px-6 py-2 bg-[#DF66A7] rounded-full font-bold text-white hover:bg-opacity-90 sm:w-auto w-full mt-4">
-              Request Service
+          <div className="sm:flex hidden space-x-10">
+            <button className="px-6 py-2 bg-[#0171E3] rounded-md font-bold text-white hover:bg-opacity-90 sm:w-auto w-full mt-4 text-xl">
+              Let's Talk
+            </button>
+            <button className="px-6 py-2 bg-[#E6F1FC] rounded-md font-bold text-[#0171E3] hover:text-opacity-80  sm:w-auto w-full mt-4 text-xl">
+              Our Services
             </button>
           </div>
         </div>
