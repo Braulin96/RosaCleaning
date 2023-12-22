@@ -35,7 +35,7 @@ const test = [
 const ModuleTestimonial = ({ quote, name, position, profile }) => {
   return (
     <>
-      <div className="w-52 flex flex-col bg-gray-100 h-60 mx-auto p-4 shadow-md rounded-lg my-auto">
+      <div className="w-52 flex flex-col bg-white h-60 mx-auto p-4 shadow-md rounded-lg my-auto">
         <div className="my-auto space-y-2">
           <VscQuote color="#e5e7eb" width={40} size={30} />
           <p className="mx-2">{quote}</p>
@@ -64,7 +64,7 @@ const ModuleTestimonial = ({ quote, name, position, profile }) => {
 const Testimonial = () => {
   return (
     <>
-      <div className="flex relative bg-gradient-to-t from-gray-200 via-white to-white mx-auto flex-wrap h-[600px] ">
+      <div className="flex relative bg-gray-100 bg-opacity-50 mx-auto flex-wrap h-[600px]">
         <div className="flex flex-col max-w-7xl w-full mx-auto my-20">
           <h1 className="text-4xl mb-20 text-gray-700 w-full">Testimonial</h1>
           <div className="flex">
