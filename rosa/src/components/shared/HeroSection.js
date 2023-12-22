@@ -7,6 +7,8 @@ import animationData from "../../assets/cleanLottie.json";
 import { DotLottiePlayer, Controls } from "@dotlottie/react-player";
 import "@dotlottie/react-player/dist/index.css";
 
+import { ImCheckboxChecked } from "react-icons/im";
+
 const HeroSection = () => {
   return (
     <div className="bg-white">
@@ -25,6 +27,20 @@ const HeroSection = () => {
             <button className="px-6 py-2 bg-[#E6F1FC] rounded-md font-bold text-[#0171E3] hover:text-opacity-80  sm:w-auto w-full mt-4 text-xl">
               Our Services
             </button>
+          </div>
+          <div className="pt-6">
+            <div className="flex gap-x-2">
+              <ImCheckboxChecked className="my-auto" color="#E6F1FC" />
+              <p className="text-sm">
+                We’ re Local - Family Owned and Operated
+              </p>
+            </div>
+            <div className="flex gap-x-2 mt-2">
+              <ImCheckboxChecked className="my-auto" color="#E6F1FC" />
+              <p className="text-sm">
+              We’ re Quick -  Same Day Pick Up and Drop Off
+              </p>
+            </div>
           </div>
         </div>
         <div className="my-auto relative">
