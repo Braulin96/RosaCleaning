@@ -26,20 +26,20 @@ const HeroSection = () => {
               Our Services
             </button>
           </div>
-          <div>Here goes the Lottie file</div>
         </div>
-        <div className="my-auto">
+        <div className="my-auto relative">
           <img
             className="sm:w-[30rem] sm:min-w-[20rem] sm:max-w-[30rem] max-w-[20rem] hover:opacity-90"
             src={Vector}
             alt="painting"
           />
+          <div className="absolute top-0">
+            <DotLottiePlayer src={animationData} autoplay loop>
+              {/* <Controls /> */}
+            </DotLottiePlayer>
+          </div>
         </div>
-        <div>
-          <DotLottiePlayer src={animationData} autoplay loop>
-            <Controls />
-          </DotLottiePlayer>
-        </div>
+
         <div className="sm:hidden w-full -mt-20">
           <button className="px-6 py-2 w-full bg-[#DF66A7] rounded-full font-bold text-white hover:bg-opacity-90">
             Request Service
