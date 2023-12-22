@@ -25,7 +25,7 @@ const HeroSection = () => {
               Let's Talk
             </button>
             <button className="px-6 py-2 bg-[#E6F1FC] rounded-md font-bold text-[#0171E3] hover:text-opacity-80  sm:w-auto w-full mt-4 text-xl">
-              Our Services
+              Services
             </button>
           </div>
           <div className="pt-6">
