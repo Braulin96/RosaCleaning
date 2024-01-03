@@ -30,19 +30,36 @@ const ChooseUs = () => {
   return (
     <>
       <div className="bg-[#E6F1FC]">
-        <div className="flex justify-around h-[700px] max-w-7xl mx-auto px-4 flex-wrap py-20">
-          <div>
-            <h1 className="text-[40px] font-medium mx-auto flex justify-center">Why Choose Us</h1>
-           
-            <div className="flex">
-              <Module title="Testing" icon={BsShieldLockFill}>
-                The concept of marketing support product range, regardless of
-                the cost market trends
-              </Module>
-              <Module title="Testing" icon={BsShieldLockFill}>
-                The concept of marketing support product range, regardless of
-                the cost market trends
-              </Module>
+        <div className="flex justify-around h-[600px] max-w-7xl mx-auto px-4 flex-wrap">
+          <div className="w-full my-auto">
+            <h1 className="text-[40px] font-medium mx-auto flex justify-center mb-16">
+              Why Choose Us
+            </h1>
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-16">
+              <div className="col-span-1 m-auto">
+                <Module title="Testing" icon={BsShieldLockFill}>
+                  The concept of marketing support product range, regardless of
+                  the cost market trends
+                </Module>
+              </div>
+              <div className="col-span-1 m-auto">
+                <Module title="Testing" icon={BsShieldLockFill}>
+                  The concept of marketing support product range, regardless of
+                  the cost market trends
+                </Module>
+              </div>
+              <div className="col-span-1 m-auto">
+                <Module title="Testing" icon={BsShieldLockFill}>
+                  The concept of marketing support product range, regardless of
+                  the cost market trends
+                </Module>
+              </div>
+              <div className="col-span-1 m-auto">
+                <Module title="Testing" icon={BsShieldLockFill}>
+                  The concept of marketing support product range, regardless of
+                  the cost market trends
+                </Module>
+              </div>
             </div>
           </div>
         </div>
