@@ -4,16 +4,20 @@ import Services from "./components/shared/Services";
 import Testimonial from "./components/Testimonial";
 import Price from "./components/shared/Price";
 import Footer from "./components/shared/Footer";
+import ChooseUs from "components/shared/ChooseUs";
+import OurService from "components/shared/OurService";
 
 function App() {
   return (
     <div>
       <Navbar />
       <HeroSection />
-      <Services />
-      <Testimonial />
-      <Price/>
-      <Footer/>
+      <ChooseUs/> 
+      <OurService />
+      {/* {/* <Services />
+      <Testimonial /> */}
+      {/* <Price/> */}
+      {/* <Footer/>   */}
     </div>
   );
 }
