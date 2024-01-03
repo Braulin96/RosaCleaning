@@ -8,9 +8,7 @@ const Module = ({ title, description, icon }) => {
         <div className="border border-[#B0D3F6] h-48 w-60 flex items-center px-6 rounded-xl">
           <div className="">
             <p className="font-medium text-2xl text-[#00284F]">{title}</p>
-            <p className="mt-2">
-             {description}
-            </p>
+            <p className="mt-2">{description}</p>
           </div>
         </div>
         <div className="bg-[#F7F7F7] -top-5 h-14 my-auto flex shrink-0 aspect-square rounded-full absolute">
@@ -35,7 +33,23 @@ const OurService = () => {
             We Work Many Fields To Clean
             <br /> Your Surrounding Area
           </h1>
-          <Module title="Home Cleaning" description="Elevate your space, embrace the grace of a spotless home." icon={MdOutlineSupportAgent} />
+          <div className="flex justify-around gap-8 flex-wrap">
+            <Module
+              title="Home Cleaning"
+              description="Elevate your space, embrace the grace of a spotless home."
+              icon={MdOutlineSupportAgent}
+            />
+            <Module
+              title="house Cleaning"
+              description="Elevate your space, embrace the grace of a spotless home."
+              icon={MdOutlineSupportAgent}
+            />
+            <Module
+              title="street Cleaning"
+              description="Elevate your space, embrace the grace of a spotless home."
+              icon={MdOutlineSupportAgent}
+            />
+          </div>
         </div>
       </div>
     </div>
