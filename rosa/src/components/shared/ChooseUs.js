@@ -4,7 +4,6 @@ import { MdOutlineFlashOn } from "react-icons/md";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { MdOutlineSupportAgent } from "react-icons/md";
 
-
 const Module = ({ icon, title, children }) => {
   return (
     <>
