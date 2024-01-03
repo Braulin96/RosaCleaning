@@ -1,5 +1,9 @@
 import React from "react";
 import { BsShieldLockFill } from "react-icons/bs";
+import { MdOutlineFlashOn } from "react-icons/md";
+import { RiMoneyDollarCircleFill } from "react-icons/ri";
+import { MdOutlineSupportAgent } from "react-icons/md";
+
 
 const Module = ({ icon, title, children }) => {
   return (
@@ -37,27 +41,27 @@ const ChooseUs = () => {
             </h1>
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-12">
               <div className="col-span-1 m-auto">
-                <Module title="Testing" icon={BsShieldLockFill}>
+                <Module title="Safe" icon={BsShieldLockFill}>
                   The concept of marketing support product range, regardless of
-                  the cost market trends
+                  the cost market trends.
                 </Module>
               </div>
               <div className="col-span-1 m-auto">
-                <Module title="Testing" icon={BsShieldLockFill}>
+                <Module title="Fast" icon={MdOutlineFlashOn}>
                   The concept of marketing support product range, regardless of
-                  the cost market trends
+                  the cost market trends.
                 </Module>
               </div>
               <div className="col-span-1 m-auto">
-                <Module title="Testing" icon={BsShieldLockFill}>
+                <Module title="Low Price" icon={RiMoneyDollarCircleFill}>
                   The concept of marketing support product range, regardless of
-                  the cost market trends
+                  the cost market trends.
                 </Module>
               </div>
               <div className="col-span-1 m-auto">
-                <Module title="Testing" icon={BsShieldLockFill}>
+                <Module title="Quick Support" icon={MdOutlineSupportAgent}>
                   The concept of marketing support product range, regardless of
-                  the cost market trends
+                  the cost market trends.
                 </Module>
               </div>
             </div>
