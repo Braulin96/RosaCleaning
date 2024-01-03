@@ -1,4 +1,6 @@
+// Note: components
 import React from "react";
+// Note: Images/Icons
 import { BsShieldLockFill } from "react-icons/bs";
 import { MdOutlineFlashOn } from "react-icons/md";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
@@ -18,11 +20,7 @@ const Module = ({ icon, title, children }) => {
         </div>
         <div className="my-auto">
           <p className="font-medium text-2xl"> {title} </p>
-          <p className="mt-2">
-            {/* The concept of marketing support product range, regardless of the
-            cost market trends */}
-            {children}
-          </p>
+          <p className="mt-2">{children}</p>
         </div>
       </div>
     </>
