@@ -33,7 +33,7 @@ const Module = ({ icon, title, children }) => {
 const ChooseUs = () => {
   return (
     <>
-      <div className="bg-[#E6F1FC]">
+      <div className="bg-[#E6F1FC] sm:mx-4 mx-2 rounded-2xl">
         <div className="flex justify-around sm:h-[600px] h-fit sm:py-0 py-20 max-w-7xl mx-auto px-4 flex-wrap">
           <div className="w-full my-auto">
             <h1 className="text-[40px] font-medium mx-auto flex justify-center mb-16">
