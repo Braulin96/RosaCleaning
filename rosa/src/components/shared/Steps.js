@@ -32,7 +32,7 @@ const Module = ({ title, description, icon }) => {
 const Steps = () => {
   return (
     <div className="bg-[#F7F7F7] sm:mx-4 mx-2 rounded-2xl">
-      <div className="flex sm:h-[700px] h-fit py-20 max-w-7xl mx-auto px-4 flex-wrap">
+      <div className="flex h-fit py-24 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="flex">
           <div>
             <div className="flex justify-between">
