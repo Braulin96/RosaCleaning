@@ -15,7 +15,7 @@ const Module = ({ title, description, icon }) => {
             <p className="mt-2">{description}</p>
           </div>
         </div>
-        <div className="bg-[#F7F7F7] -top-5 h-14 my-auto flex shrink-0 aspect-square rounded-full absolute">
+        <div className="border border-[#B0D3F6] bg-white  -top-5 h-16 my-auto flex shrink-0 aspect-square rounded-full absolute">
           {icon &&
             React.createElement(icon, {
               className: "m-auto",
