@@ -1,5 +1,6 @@
+// Note: components
 import React from "react";
-import { RiPlantFill } from "react-icons/ri";
+// Note: images/icons
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { RiShoppingCartFill } from "react-icons/ri";
 import { IoCallSharp } from "react-icons/io5";
@@ -9,32 +10,29 @@ import Iphone from "components/assets/images/iPhone.png";
 
 const Module = ({ title, description, icon }) => {
   return (
-    <>
-      <div className="relative md:w-auto w-full">
-        <div className="flex">
-          <div className="bg-white h-16 my-auto flex shrink-0 aspect-square rounded-full">
-            {icon &&
-              React.createElement(icon, {
-                className: "m-auto",
-                size: 30,
-                color: "#0171E3",
-              })}
-            {/* <RiPlantFill className="m-auto" color="#0171E3" size={40} /> */}
-          </div>
-          <div className="ml-4">
-            <p className="font-medium text-2xl text-[#00284F] mb-1">{title}</p>
-            <p> {description} </p>
-          </div>
+    <div className="relative md:w-auto w-full">
+      <div className="flex">
+        <div className="bg-white h-16 my-auto flex shrink-0 aspect-square rounded-full">
+          {icon &&
+            React.createElement(icon, {
+              className: "m-auto",
+              size: 30,
+              color: "#0171E3",
+            })}
+        </div>
+        <div className="ml-4">
+          <p className="font-medium text-2xl text-[#00284F] mb-1">{title}</p>
+          <p> {description} </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 const Steps = () => {
   return (
     <div className="bg-[#F7F7F7] sm:mx-4 mx-2 rounded-2xl">
-      <div className="flex h-[700px] max-w-7xl mx-auto px-4 flex-wrap py-20">
+      <div className="flex sm:h-[700px] h-fit py-20 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="flex">
           <div>
             <div className="flex justify-between">
