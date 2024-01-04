@@ -15,7 +15,7 @@ const Module = ({ title, description, icon }) => {
             {icon &&
               React.createElement(icon, {
                 className: "m-auto",
-                size: 40,
+                size: 30,
                 color: "#0171E3",
               })}
             {/* <RiPlantFill className="m-auto" color="#0171E3" size={40} /> */}
