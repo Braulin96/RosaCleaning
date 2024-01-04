@@ -15,7 +15,19 @@ const basicFeatures = [
   },
 ];
 
-const Module = ({ title, className }) => {
+const generalFeatures = [
+  {
+    features: "access to 10% in general",
+  },
+  {
+    features: "access to 20% in general",
+  },
+  {
+    features: "access to 30% in general",
+  },
+];
+
+const Module = ({ title, className, serviceType }) => {
   return (
     <div className="border border-[#0171E3] border-opacity-20 h-fit py-12 px-10 rounded-xl">
       <p className="font-medium text-2xl text-[#00284F] text-center mb-6">
@@ -23,7 +35,7 @@ const Module = ({ title, className }) => {
       </p>
 
       <div className="mb-6 flex flex-col gap-y-2">
-        {basicFeatures.map((advantage, index) => (
+        {serviceType.map((advantage, index) => (
           <div key={index} className="flex space-x-2">
             <IoIosCheckmarkCircleOutline
               color="#0171E3"
@@ -59,9 +71,13 @@ const Pricing = () => {
           We offer unparalleled <br />
           value for every category of service
         </h1>
-        <Module title="Basic" className="bg-[#E6F1FC] text-[#00284F]" />
-        <Module title="General" className="bg-[#0171E3] text-white" />
-        <Module title="Premium" className="bg-[#E6F1FC] text-[#00284F]" />
+        <Module
+          serviceType={basicFeatures}
+          title="Basic"
+          className="bg-[#E6F1FC] text-[#00284F]"
+        />
+        {/* <Module title="General" className="bg-[#0171E3] text-white" />
+        <Module title="Premium" className="bg-[#E6F1FC] text-[#00284F]" /> */}
       </div>
     </>
   );
