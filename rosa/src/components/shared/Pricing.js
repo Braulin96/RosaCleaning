@@ -27,7 +27,19 @@ const generalFeatures = [
   },
 ];
 
-const Module = ({ title, className, serviceType }) => {
+const premiumFeatures = [
+  {
+    features: "access to 10% in premium",
+  },
+  {
+    features: "access to 20% in premium",
+  },
+  {
+    features: "access to 30% in premium",
+  },
+];
+
+const Module = ({ title, className, serviceType, price }) => {
   return (
     <div className="border border-[#0171E3] border-opacity-20 h-fit py-12 px-10 rounded-xl">
       <p className="font-medium text-2xl text-[#00284F] text-center mb-6">
@@ -49,7 +61,7 @@ const Module = ({ title, className, serviceType }) => {
 
       <div className="flex mb-3">
         <p className="font-semibold mx-auto text-3xl text-[#00284F] mb-1">
-          200 $
+          {price}
         </p>
       </div>
       <div className="w-full flex justify-center mx-auto">
@@ -74,10 +86,21 @@ const Pricing = () => {
         <Module
           serviceType={basicFeatures}
           title="Basic"
+          price="200$"
           className="bg-[#E6F1FC] text-[#00284F]"
         />
-        {/* <Module title="General" className="bg-[#0171E3] text-white" />
-        <Module title="Premium" className="bg-[#E6F1FC] text-[#00284F]" /> */}
+        <Module
+          serviceType={generalFeatures}
+          title="General"
+          price="400$"
+          className="bg-[#0171E3] text-white"
+        />
+        <Module
+          serviceType={premiumFeatures}
+          title="Premium"
+          price="600$"
+          className="bg-[#E6F1FC] text-[#00284F]"
+        />
       </div>
     </>
   );
