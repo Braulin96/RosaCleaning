@@ -24,12 +24,12 @@ const features = [
 
 const Module = ({ question, answer }) => {
   return (
-    <div>
+    <div className="flex-grow">
       <Accordion>
         <AccordionSummary
           expandIcon={<IoIosArrowDown />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
+          id="panel1a-header"      
         >
           <Typography> {question}</Typography>
         </AccordionSummary>
@@ -75,10 +75,10 @@ const Features = () => {
               We Cover Most
               <br /> Asked Questions here
             </h1>
-            <div className="mx-auto">
+            <div className="mx-auto flex flex-col space-y-8">
               {features.map((text, index) => (
-                <div key={index}>
-                  <Module question={text.title} answer={text.description} />
+                <div key={index} className=""  >
+                  <Module question={text.title} answer={text.description}  />
                 </div>
               ))}
               <Module
