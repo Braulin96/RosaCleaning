@@ -27,7 +27,7 @@ const Module = ({ question, answer }) => {
     <div className="flex-grow">
       <Accordion>
         <AccordionSummary
-          expandIcon={<IoIosArrowDown />}
+          expandIcon={<IoIosArrowDown color="#0171E3" />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
