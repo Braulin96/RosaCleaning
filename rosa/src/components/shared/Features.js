@@ -27,7 +27,7 @@ const Module = ({ question, answer }) => {
     <div className="flex-grow">
       <Accordion>
         <AccordionSummary
-          expandIcon={<IoIosArrowDown color="#0171E3" />}
+          expandIcon={<IoIosArrowDown color="#8d8f8c" />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -56,10 +56,10 @@ const Features = () => {
                   <Module question={text.title} answer={text.description} />
                 </div>
               ))}
-              <Module
+              {/* <Module
                 question="How are you?"
                 answer="I am fine and better each day"
-              />
+              /> */}
             </div>
           </div>
         </div>
