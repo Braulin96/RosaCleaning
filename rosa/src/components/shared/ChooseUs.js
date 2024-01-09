@@ -44,14 +44,14 @@ const Module = ({ icon, title, children }) => {
 
   return (
     <>
-      <div className="flex space-x-6 max-w-md">
+      <div className="flex space-x-6 max-w-md" onMouseOver={() => setIsHovered(true)}
+              onMouseOut={() => setIsHovered(false)}>
         <div className="bg-white h-24 my-auto flex shrink-0 aspect-square rounded-full">
           {icon && (
             <div
               className="m-auto"
               style={iconStyle}
-              onMouseOver={() => setIsHovered(true)}
-              onMouseOut={() => setIsHovered(false)}
+              
             >
               {React.createElement(icon)}
             </div>
