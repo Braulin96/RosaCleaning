@@ -5,18 +5,57 @@ import { BsShieldLockFill } from "react-icons/bs";
 import { MdOutlineFlashOn } from "react-icons/md";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { MdOutlineSupportAgent } from "react-icons/md";
+import{ useState } from "react";
+
+// const Module = ({ icon, title, children }) => {
+//   return (
+//     <>
+//       <div className="flex space-x-6 max-w-md">
+//         <div className="bg-white h-24 my-auto flex shrink-0 aspect-square rounded-full">
+//           {icon &&
+//             React.createElement(icon, {
+//               className: "m-auto",
+//               size: 55,
+//               color: "#0171E3",
+//               transition: "color 0.3s ease", // Add a transition for a smooth effect
+//             })}
+//         </div>
+//         <div className="my-auto">
+//           <p className="font-medium text-2xl"> {title} </p>
+//           <p className="mt-2">{children}</p>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+
+
 
 const Module = ({ icon, title, children }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const iconStyle = {
+    fontSize: 55,
+    //color: isHovered ? "#325667" : "#0171E3",
+    color: isHovered ? "#427087" : "#6dbadf",
+    transition: "color 2.3s ease",
+  };
+
   return (
     <>
       <div className="flex space-x-6 max-w-md">
         <div className="bg-white h-24 my-auto flex shrink-0 aspect-square rounded-full">
-          {icon &&
-            React.createElement(icon, {
-              className: "m-auto",
-              size: 55,
-              color: "#0171E3",
-            })}
+          {icon && (
+            <div
+              className="m-auto"
+              style={iconStyle}
+              onMouseOver={() => setIsHovered(true)}
+              onMouseOut={() => setIsHovered(false)}
+            >
+              {React.createElement(icon)}
+            </div>
+          )}
         </div>
         <div className="my-auto">
           <p className="font-medium text-2xl"> {title} </p>
@@ -26,6 +65,8 @@ const Module = ({ icon, title, children }) => {
     </>
   );
 };
+
+
 
 const ChooseUs = () => {
   return (
