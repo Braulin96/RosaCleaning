@@ -1,4 +1,6 @@
-import { Navbar, Button } from "flowbite-react";
+// Note: components:
+import { Navbar } from "flowbite-react";
+// Note: images:
 import Logo from "../../assets/rosaLogo.png";
 
 const Nav = () => {
