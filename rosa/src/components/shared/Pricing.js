@@ -66,11 +66,11 @@ const Module = ({ title, className, serviceType, price }) => {
             </p>
           </div>
           <div className="w-full flex justify-center mx-auto">
-            <a
+            <button
               className={`${className} text-center font-semibold px-6 py-2 rounded-md md:w-auto w-full`}
             >
               Schedule Now
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -89,33 +89,29 @@ const Pricing = () => {
           </h1>
           <div className="flex justify-between gap-x-4 gap-y-12 w-full flex-wrap">
             <div className="mx-auto">
-            <Module
-              serviceType={basicFeatures}
-              title="Basic"
-              price="200$"
-              className="bg-[#E6F1FC] text-[#00284F]"
-            />
-
-            </div>
-            
-            <div className="mx-auto">
-            <Module
-              serviceType={generalFeatures}
-              title="General"
-              price="400$"
-              className="bg-[#0171E3] text-white"
-            />
+              <Module
+                serviceType={basicFeatures}
+                title="Basic"
+                price="200$"
+                className="bg-[#E6F1FC] text-[#00284F] hover:text-opacity-80"
+              />
             </div>
             <div className="mx-auto">
-            <Module
-              serviceType={premiumFeatures}
-              title="Premium"
-              price="600$"
-              className="bg-[#E6F1FC] text-[#00284F]"
-            />
-
+              <Module
+                serviceType={generalFeatures}
+                title="General"
+                price="400$"
+                className="bg-[#0171E3] text-white hover:bg-opacity-90"
+              />
             </div>
-           
+            <div className="mx-auto">
+              <Module
+                serviceType={premiumFeatures}
+                title="Premium"
+                price="600$"
+                className="bg-[#E6F1FC] text-[#00284F] hover:text-opacity-80"
+              />
+            </div>
           </div>
         </div>
       </div>
