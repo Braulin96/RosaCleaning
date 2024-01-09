@@ -12,7 +12,7 @@ import { ImCheckboxChecked } from "react-icons/im";
 const HeroSection = () => {
   return (
     <div className="bg-white">
-      <div className="flex justify-around sm:py-32 py-20 max-w-7xl mx-auto px-4 flex-wrap">
+      <div className="flex justify-around sm:py-32 py-20 max-w-7xl mx-auto px-4 flex-wrap space-y-12">
         <div className="my-auto space-y-4">
           <h1 className="text-[40px] font-semibold">
             The best{" "}
@@ -20,7 +20,7 @@ const HeroSection = () => {
             <br />
             Transforming Spaces, Elevating Lives
           </h1>
-          <div className="sm:flex hidden space-x-10">
+          <div className="flex space-x-10">
             <button className="px-6 py-2 bg-[#0171E3] rounded-md font-bold text-white hover:bg-opacity-90 sm:w-auto w-full mt-4 text-xl">
               Let's Talk
             </button>
@@ -38,7 +38,7 @@ const HeroSection = () => {
             <div className="flex gap-x-2 mt-2">
               <ImCheckboxChecked className="my-auto" color="#E6F1FC" />
               <p className="text-sm">
-              We’ re Quick -  Same Day Pick Up and Drop Off
+                We’ re Quick - Same Day Pick Up and Drop Off
               </p>
             </div>
           </div>
@@ -54,12 +54,6 @@ const HeroSection = () => {
               {/* <Controls /> */}
             </DotLottiePlayer>
           </div>
-        </div>
-
-        <div className="sm:hidden w-full -mt-20">
-          <button className="px-6 py-2 w-full bg-[#DF66A7] rounded-full font-bold text-white hover:bg-opacity-90">
-            Request Service
-          </button>
         </div>
       </div>
     </div>
