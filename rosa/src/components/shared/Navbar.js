@@ -17,20 +17,29 @@ const Nav = () => {
           >
             Schedule Now
           </button>
-          
           <Navbar.Toggle />
-          
         </div>
         <Navbar.Collapse>
-          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#" active>
+          <Navbar.Link
+            className="text-[#0171E3]"
+            href="#"
+            //active
+          >
             Home
           </Navbar.Link>
-          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">About</Navbar.Link>
-          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">Services</Navbar.Link>
-          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">Pricing</Navbar.Link>
-          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">Contact</Navbar.Link>
+          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
+            About
+          </Navbar.Link>
+          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
+            Services
+          </Navbar.Link>
+          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
+            Pricing
+          </Navbar.Link>
+          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
+            Contact
+          </Navbar.Link>
         </Navbar.Collapse>
-        
       </Navbar>
     </>
   );
