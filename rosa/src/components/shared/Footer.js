@@ -7,9 +7,9 @@ import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <div className="pt-24 pb-12 bg-[#F7F7F7]">
-      <div className="flex w-full ">
-        <div className="w-1/2 flex flex-col justify-center">
+    <div className="sm:pt-24 pt-12 pb-12 bg-[#F7F7F7]">
+      <div className="flex w-full flex-wrap px-10 justify-center space-x-8">
+        <div className="w-1/2 flex flex-col justify-center flex-grow">
           <h1 className="text-[40px] font-bold flex justify-center text-[#00284F] mb-6">
             Get In Touch!
           </h1>
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex">
-            <div className="mx-auto flex space-x-32 mt-8">
+            <div className="mx-auto flex md:space-x-32 space-x-12 mt-8">
               <div>
                 <p className="text-lg font-semibold mb-2">Quick Links :</p>
                 <ul className="flex flex-col gap-y-2">
@@ -45,8 +45,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex justify-center">
-          <img width={350} className="" src={WomanCalling} />
+        <div className="md:flex w-1/3 hidden ">
+          <img className="w-72" src={WomanCalling} />
         </div>
       </div>
       <div className="px-10">
