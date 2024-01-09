@@ -12,7 +12,7 @@ import { ImCheckboxChecked } from "react-icons/im";
 const HeroSection = () => {
   return (
     <div className="bg-white">
-      <div className="flex justify-around h-[700px] max-w-7xl mx-auto px-4 flex-wrap">
+      <div className="flex justify-around sm:py-32 py-20 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="my-auto space-y-4">
           <h1 className="text-[40px] font-semibold">
             The best{" "}
