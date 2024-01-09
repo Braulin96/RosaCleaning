@@ -39,8 +39,8 @@ const Nav = () => {
         <img width={300} src={Logo} alt="logo RosaCleaning" />
         </span>
       </Navbar.Brand>
-      <div className="flex md:order-2">
-        <Button className="px-1 py-0.5 bg-[#0171E3] rounded-md font-bold text-white hover:bg-red-500 sm:w-auto w-full mt-4">Schedule Now</Button>
+      <div className="flex md:order-2 my-auto">
+        <button className="lg:flex hidden px-6 py-2 bg-[#0171E3] rounded-md font-bold text-white hover:bg-opacity-90 sm:w-auto w-full mt-4" style={{margin:'auto'}} >Schedule Now</button>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
