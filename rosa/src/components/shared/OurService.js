@@ -50,7 +50,7 @@ const Module = ({ title, description, icon }) => {
         <div
           onMouseOver={() => setIsHovered(true)}
           onMouseOut={() => setIsHovered(false)}
-          className="border border-[#B0D3F6] h-52 md:w-72 w-full flex items-center px-8 rounded-xl"
+          className="border border-[#a5ddf8] h-52 md:w-72 w-full flex items-center px-8 rounded-xl"
           style={containerStyle}
         >
           <div>
