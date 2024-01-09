@@ -31,12 +31,12 @@ const ChooseUs = () => {
   return (
     <>
       <div className="bg-[#E6F1FC] sm:mx-4 mx-2 rounded-2xl">
-        <div className="flex justify-around sm:h-[600px] h-fit sm:py-0 py-20 max-w-7xl mx-auto px-4 flex-wrap">
+        <div className="flex justify-around py-20 sm:py-36 max-w-7xl mx-auto px-4 flex-wrap">
           <div className="w-full my-auto">
-            <h1 className="text-[40px] font-medium mx-auto flex justify-center sm:mb-16 mb-12">
+            <h1 className="text-[40px] font-medium mx-auto flex justify-center sm:mb-20 mb-12">
               Why Choose Us
             </h1>
-            <div className="grid sm:grid-cols-2 grid-cols-1 gap-12">
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-20">
               <div className="col-span-1 m-auto">
                 <Module title="Safe" icon={BsShieldLockFill}>
                   The concept of marketing support product range, regardless of
