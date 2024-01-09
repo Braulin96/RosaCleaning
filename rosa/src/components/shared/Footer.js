@@ -38,7 +38,7 @@ const Footer = () => {
                   <p>8 am - 5 pm, Sun</p>
                 </div>
                 <div>
-                  <p className="text-lg font-semibold mb-2">Location</p>
+                  <p className="text-lg font-semibold mt-4 mb-2">Location</p>
                   <p>70 M31 Piccadilly Manchester</p>
                 </div>
               </div>
@@ -49,7 +49,8 @@ const Footer = () => {
           <img width={350} src={WomanCalling} />
         </div>
       </div>
-      <div className="flex border-t border-opacity-70 border-[#D1D2D1] max-w-7xl  mt-12 mx-auto ">
+      <div className="px-10">
+      <div className="flex border-t border-opacity-70 border-[#D1D2D1] max-w-7xl  mt-12 mx-auto">
         <div className="mx-auto flex justify-between w-full mt-4">
           <p className="text-sm">
             @2023 - Rosa Cleaning Services - All righths reserved
@@ -57,6 +58,9 @@ const Footer = () => {
           <button className="text-sm">Terms and Privacy</button>
         </div>
       </div>
+
+      </div>
+      
     </div>
   );
 };
