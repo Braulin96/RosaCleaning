@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="pt-24 pb-12 bg-[#F7F7F7]">
       <div className="flex w-full ">
-        <div className="flex-grow">
+        <div className="w-1/2 flex flex-col justify-center">
           <h1 className="text-[40px] font-bold flex justify-center text-[#00284F] mb-6">
             Get In Touch!
           </h1>
@@ -45,22 +45,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=" w-1/3">
-          <img width={350} src={WomanCalling} />
+        <div className="w-1/2 flex justify-center">
+          <img width={350} className="" src={WomanCalling} />
         </div>
       </div>
       <div className="px-10">
-      <div className="flex border-t border-opacity-70 border-[#D1D2D1] max-w-7xl  mt-12 mx-auto">
-        <div className="mx-auto flex justify-between w-full mt-4">
-          <p className="text-sm">
-            @2023 - Rosa Cleaning Services - All righths reserved
-          </p>
-          <button className="text-sm">Terms and Privacy</button>
+        <div className="flex border-t border-opacity-70 border-[#D1D2D1] max-w-7xl  mt-12 mx-auto">
+          <div className="mx-auto flex flex-wrap gap-y-2 justify-between w-full mt-4">
+            <p className="text-sm">
+              @2023 - Rosa Cleaning Services - All righths reserved
+            </p>
+            <button className="text-sm">Terms and Privacy</button>
+          </div>
         </div>
       </div>
-
-      </div>
-      
     </div>
   );
 };
