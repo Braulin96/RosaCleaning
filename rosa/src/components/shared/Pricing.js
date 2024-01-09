@@ -61,18 +61,18 @@ const Module = ({ title, className, serviceType, price }) => {
           </div>
 
           <div className="flex mb-3">
-            <p className="font-semibold mx-auto text-3xl text-[#00284F] mb-1">
+            <p className="font-semibold mx-auto text-3xl text-[#00284F] mb-3">
               {price}
             </p>
           </div>
           <div className="w-full flex justify-center mx-auto">
             <a
-              className={`${className} text-center font-semibold px-3 py-1 rounded-md md:w-auto w-full`}
+              className={`${className} text-center font-semibold px-6 py-2 rounded-md md:w-auto w-full`}
             >
-              Schedule now
+              Schedule Now
             </a>
           </div>
-        </div>{" "}
+        </div>
       </div>
     </div>
   );
@@ -83,7 +83,7 @@ const Pricing = () => {
     <>
       <div className="flex  h-fit py-20 sm:py-32 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="w-full">
-          <h1 className="text-[40px] font-medium flex sm:mb-16 mb-12 mr-auto text-[#00284F]">
+          <h1 className="text-[40px] font-medium flex sm:mb-24 mb-12 mr-auto text-[#00284F]">
             We offer unparalleled <br />
             value for every category of service
           </h1>
