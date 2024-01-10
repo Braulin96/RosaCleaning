@@ -1,13 +1,10 @@
-// Images
-import Hero from "../../assets/heroSection.png";
-import Vector from "../../assets/vector.png";
-
-import animationData from "../../assets/cleanLottie.json";
-
-import { DotLottiePlayer, Controls } from "@dotlottie/react-player";
-import "@dotlottie/react-player/dist/index.css";
-
+//Note: Components
+import Lottie from "lottie-react";
 import { ImCheckboxChecked } from "react-icons/im";
+//Note: Images, Lottie:
+import Vector from "../../assets/vector.png";
+import womanCleaningAnimation from "../../assets/cleanLottie.json";
+
 
 const HeroSection = () => {
   return (
@@ -50,9 +47,7 @@ const HeroSection = () => {
             alt="painting"
           />
           <div className="absolute top-0">
-            <DotLottiePlayer src={animationData} autoplay loop>
-              {/* <Controls /> */}
-            </DotLottiePlayer>
+            <Lottie animationData={womanCleaningAnimation} loop={true} />
           </div>
         </div>
       </div>
