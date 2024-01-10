@@ -22,7 +22,7 @@ const Module = ({ title, description, icon }) => {
         </div>
         <div className="ml-4">
           <p className="font-medium text-2xl text-[#00284F] mb-1">{title}</p>
-          <p> {description} </p>
+          <p>{description}</p>
         </div>
       </div>
     </div>
@@ -77,10 +77,10 @@ const Steps = () => {
                     title="Service day"
                     icon={MdCleaningServices}
                     description="Proceed to service request"
-                  />
+                  />s
                 </div>
               </div>
-              <div className="my-auto h-full text-center justify-center md:flex hidden">
+              <div className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
                 <img className="my-auto h-full flex" width={500} src={Iphone} />
               </div>
             </div>
