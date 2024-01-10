@@ -77,7 +77,7 @@ const Steps = () => {
                     title="Service day"
                     icon={MdCleaningServices}
                     description="Proceed to service request"
-                  />s
+                  />
                 </div>
               </div>
               <div className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
