@@ -8,6 +8,7 @@ import Pricing from "components/shared/Pricing";
 import Features from "components/shared/Features";
 import Dedicating from "components/shared/Dedicating";
 import Footer from "components/shared/Footer";
+import Testimonials from "components/shared/Testimonials";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       <Steps />
       <Pricing />
       <Features />
-      <Dedicating />
+      {/* <Dedicating /> */}
+      <Testimonials/>
       <Footer />
     </div>
   );
