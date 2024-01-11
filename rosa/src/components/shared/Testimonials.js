@@ -48,7 +48,7 @@ const Module = () => {
         <div
           onMouseOver={() => setIsHovered(true)}
           onMouseOut={() => setIsHovered(false)}
-          className="border-2 flex flex-col border-[#e0e1e0] rounded-lg w-80 h-72 overflow-hidden shadow-md"
+          className="border-2 flex flex-col border-[#e0e1e0] rounded-lg w-80 h-72 overflow-hidden"
         >
           <div className="flex space-x-4 px-6 py-8">
             <div className="w-1/3">
@@ -71,7 +71,7 @@ const Module = () => {
               style={imageStyle}
             >
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover opacity-90"
                 src={Andrea}
                 alt="andrea profile picture"
               />
@@ -92,20 +92,20 @@ function Testimonials() {
             What Our Clients Says
           </h1>
         </div>
-        <div className="mx-auto relative">
-          <div className="flex gap-x-10 z-10">
-            <div className="ml-10">
+        <div className="mx-auto relative md:gap-y-0 gap-y-12 flex flex-col">
+          <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12">
+            <div className="md:ml-10 ml-0">
               <Module />
             </div>
-            <div className="mt-10">
+            <div className="md:mt-10 mt-0">
               <Module />
             </div>
           </div>
-          <div className="flex gap-x-10">
-            <div>
+          <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12">
+            <div className="md:ml-10 ml-0">
               <Module />
             </div>
-            <div className="mt-10">
+            <div className="md:mt-10 mt-0">
               <Module />
             </div>
           </div>
