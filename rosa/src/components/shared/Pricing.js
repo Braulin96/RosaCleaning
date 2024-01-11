@@ -41,7 +41,7 @@ const premiumFeatures = [
 
 const Module = ({ title, className, serviceType, price }) => {
   return (
-    <div className="border border-[#0171E3] border-opacity-20 w-72 h-96 flex justify-center my-auto px-4 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-1000 ease-in-out">
+    <div className="border border-[#0171E3] border-opacity-20 w-72 h-96 flex justify-center my-auto px-4 rounded-xl shadow-md  hover:shadow-2xl transition-shadow duration-1000 ease-in-out">
       <div className="h-full my-auto flex items-center">
         <div>
           <p className="font-medium text-2xl text-[#00284F] text-center mb-6">
