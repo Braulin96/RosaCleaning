@@ -48,16 +48,16 @@ const Module = () => {
         <div
           onMouseOver={() => setIsHovered(true)}
           onMouseOut={() => setIsHovered(false)}
-          className="border-2 flex flex-col border-[#e0e1e0] rounded-lg w-80 h-72 overflow-hidden"
+          className="border-2 flex flex-col border-[#e0e1e0] rounded-lg w-72 h-64 overflow-hidden"
         >
           <div className="flex space-x-4 px-6 py-8">
             <div className="w-1/3">
-              <RiDoubleQuotesL color="#e0e1e0" size={60} />
+              <RiDoubleQuotesL color="#e0e1e0" size={40} />
             </div>
             <div className="flex-grow">
               <p className="text-[#414241]">
                 Is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever.
+                Lorem Ipsum has been the industry's.
               </p>
             </div>
           </div>
@@ -87,13 +87,13 @@ function Testimonials() {
   return (
     <div className=" ">
       <div className="flex h-fit py-20 sm:py-32 max-w-7xl mx-auto px-4 flex-wrap">
-        <div className="w-full">
-          <h1 className="text-[40px] font-medium flex sm:mb-24 mb-12 mr-auto text-[#00284F] sm:text-left text-center">
+        <div className="w-full flex justify-center">
+          <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 text-[#00284F] text-center">
             What Our Clients Says
           </h1>
         </div>
         <div className="mx-auto relative md:gap-y-0 gap-y-12 flex flex-col">
-          <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12">
+          <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12 md:ml-10 ml-0">
             <div className="md:ml-10 ml-0">
               <Module />
             </div>
