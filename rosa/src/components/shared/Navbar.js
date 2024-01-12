@@ -1,6 +1,6 @@
 // Note: components:
 import { Navbar } from "flowbite-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Link,
   Button,
@@ -14,18 +14,46 @@ import Logo from "../../assets/rosaLogo.png";
 
 const Nav = () => {
   const [hideNavbar, setHideNavbar] = useState(false);
-  const handleHideNavbar = () => setHideNavbar(!hideNavbar)
+  const [prevScrollY, setPrevScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    // Determine the scrolling direction
+    const isScrollingDown = currentScrollY > prevScrollY;
+
+    // Check the scroll position and update hideNavbar accordingly
+    if (currentScrollY > 100) {
+      setHideNavbar(isScrollingDown);
+    } else {
+      setHideNavbar(false);
+    }
+
+    // Update the previous scroll position
+    setPrevScrollY(currentScrollY);
+  };
+
+
+  useEffect(() => {
+    // Attach the event listener on component mount
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollY]); // Include prevScrollY in the dependency array
 
   const hideNavbarStyle = {
     // ... other styles
-    transform: hideNavbar ? "translate(0px, -70px)" : "translate(0px, 0px)",
+    transform: hideNavbar ? "translate(0px, -100px)" : "translate(0px, 0px)",
     transition: "transform 0.3s ease-in-out", // Adjust the duration and timing function as needed
     // ... other styles
   };
   {console.log ('hideNavbar:', hideNavbar)}
 
   return (
-    <div className="max-w-7xl mx-auto fixed w-full" style={hideNavbarStyle}>
+    <div className="max-w-7xl mx-auto fixed w-full z-50" style={hideNavbarStyle}>
       <Navbar fluid rounded>
         <Navbar.Brand href="https://flowbite-react.com">
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
@@ -75,7 +103,7 @@ const Nav = () => {
               spy={true}
               smooth={true}
               duration={1000}
-              //onclick={closeMenu}
+              
             >
               Pricing
             </Link>
@@ -93,7 +121,7 @@ const Nav = () => {
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
-      <button onClick={handleHideNavbar} className="text-red-500"> hide nav </button>
+      
     </div>
   );
 };
