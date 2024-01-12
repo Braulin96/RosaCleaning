@@ -1,7 +1,5 @@
-import React from "react";
-import WomanCalling from "../assets/images/womanCalling.png";
+//Note: images, icons:
 import { FaSquareFacebook } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -10,9 +8,10 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <div className="pt-24 pb-6 bg-[#00284F] text-[#d1d2d1]">
-      <div className="flex w-full flex-wrap justify-center space-x-8 max-w-7xl mx-auto">
-        <div className="flex justify-between flex-grow">
-          <div className="">
+      <div className="px-4">
+      <div className="flex flex-wrap w-full space-x-8 max-w-7xl mx-auto">
+        <div className="flex flex-wrap justify-between w-full gap-x-4 gap-y-8">
+          <div className="mx-auto sm:mx-0">
             <h1 className="text-[40px] font-bold flex justify-center mb-6">
               Get In Touch!
             </h1>
@@ -63,13 +62,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex border-t border-opacity-70 border-[#D1D2D1] max-w-7xl  mt-24 mx-auto">
+      <div className="flex border-t border-opacity-70 border-[#D1D2D1] max-w-7xl mt-24 mx-auto">
         <div className="mx-auto flex flex-wrap gap-y-2 justify-between w-full mt-4">
           <p className="text-sm">
-            @2023 - Rosa Cleaning Services - All righths reserved
+            @2023 - Rosa Cleaning Services - All rights reserved
           </p>
           <button className="text-sm">Terms and Privacy</button>
         </div>
+      </div>
       </div>
     </div>
   );
