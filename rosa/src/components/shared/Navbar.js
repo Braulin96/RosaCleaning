@@ -38,7 +38,7 @@ const Nav = () => {
             Schedule Now
           </button> */}
           <Link
-            to="test1"
+            to="steps"
             spy={true}
             smooth={true}
             duration={1000}
@@ -55,16 +55,22 @@ const Nav = () => {
         <Navbar.Collapse>
           <Navbar.Link
             className="text-[#0171E3]"
-            href="#"
-            //active
           >
-            Home
-          </Navbar.Link>
-          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
-            About
+            <Link
+              to="hero"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              //onclick={closeMenu}
+            >
+              Home
+            </Link>
           </Navbar.Link>
           <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
             Services
+          </Navbar.Link>
+          <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
+            Steps
           </Navbar.Link>
           <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
             Pricing
