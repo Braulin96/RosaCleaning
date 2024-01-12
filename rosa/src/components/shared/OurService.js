@@ -42,7 +42,7 @@ const Module = ({ title, description, icon }) => {
 
 const OurService = () => {
   return (
-    <div className="rounded-2xl">
+    <div className="rounded-2xl" id="services">
       <div className="flex justify-around sm:py-36 py-20 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="w-full my-auto">
           <h1 className="text-[40px] font-medium mx-auto text-center flex justify-center sm:mb-20 mb-12 text-[#00284F]">
