@@ -52,9 +52,9 @@ const Nav = () => {
   };
 
   return (
-    <div className= "flex justify-center z-50 bg-white" style={{width:'100%'}}>
+    <div className="flex justify-center z-50 bg-white w-full" style={{width:'100%'}}>
       <div
-        className="max-w-7xl fixed z-50flex justify-between w-full"
+        className="max-w-7xl fixed z-50 flex justify-between w-full"
         style={hideNavbarStyle}
       >
         <Navbar fluid rounded className="w-full" style={{width:"100%"}}>
