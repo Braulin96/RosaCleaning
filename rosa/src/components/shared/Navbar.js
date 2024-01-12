@@ -52,11 +52,12 @@ const Nav = () => {
   };
 
   return (
-    <div className="flex justify-center z-50 bg-white w-full" style={{width:'100%'}}>
+    <div className="flex justify-center z-50 bg-red-500 w-full" style={{width:'100%'}}>
       <div
-        className="max-w-7xl fixed z-50 flex justify-between w-full"
+        className="fixed z-50 flex justify-between w-full bg-white"
         style={hideNavbarStyle}
       >
+        <div className="max-w-7xl w-full mx-auto">
         <Navbar fluid rounded className="w-full" style={{width:"100%"}}>
           <Navbar.Brand href="https://flowbite-react.com">
             <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
@@ -118,6 +119,7 @@ const Nav = () => {
             </Navbar.Link>
           </Navbar.Collapse>
         </Navbar>
+        </div>
       </div>
     </div>
   );
