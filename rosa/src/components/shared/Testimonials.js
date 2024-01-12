@@ -53,57 +53,55 @@ const Module = ({ name, text, role, profilePicture }) => {
 
 const Testimonials = () => {
   return (
-    <div className=" ">
-      <div className="flex h-fit py-20 sm:py-32 max-w-7xl mx-auto px-4 flex-wrap">
-        <div className="w-full flex justify-center">
-          <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 text-[#00284F] text-center">
-            What Our Clients Says
-          </h1>
-        </div>
-        <div className="mx-auto relative md:gap-y-0 gap-y-12 flex flex-col">
-          <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12 md:ml-10 ml-0">
-            <div className="md:ml-10 ml-0">
-              <Module
-                text=" Is simply dummy text of the printing and typesetting industry.
+    <div className="flex h-fit pt-24 pb-32 sm:pt-32 sm:pb-36 max-w-7xl mx-auto px-4 flex-wrap">
+      <div className="w-full flex justify-center">
+        <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 text-[#00284F] text-center">
+          What Our Clients Says
+        </h1>
+      </div>
+      <div className="mx-auto relative md:gap-y-0 gap-y-12 flex flex-col">
+        <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12 md:ml-10 ml-0">
+          <div className="md:ml-10 ml-0">
+            <Module
+              text=" Is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's."
-                name="Mr Jason Mraz"
-                role="CEO at Curbside Prophet Inc."
-                profilePicture={Andrea}
-              />
-            </div>
-            <div className="md:mt-10 mt-0">
-              <Module
-                text=" Is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's."
-                name="Mr Jason Mraz"
-                role="CEO at Curbside Prophet Inc."
-                profilePicture={John}
-              />
-            </div>
+              name="Mr Jason Mraz"
+              role="CEO at Curbside Prophet Inc."
+              profilePicture={Andrea}
+            />
           </div>
-          <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12">
-            <div className="md:ml-10 ml-0">
-              <Module
-                text=" Is simply dummy text of the printing and typesetting industry.
+          <div className="md:mt-10 mt-0">
+            <Module
+              text=" Is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's."
-                name="Mr Jason Mraz"
-                role="CEO at Curbside Prophet Inc."
-                profilePicture={Juan}
-              />
-            </div>
-            <div className="md:mt-10 mt-0">
-              <Module
-                text=" Is simply dummy text of the printing and typesetting industry.
+              name="Mr Jason Mraz"
+              role="CEO at Curbside Prophet Inc."
+              profilePicture={John}
+            />
+          </div>
+        </div>
+        <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12">
+          <div className="md:ml-10 ml-0">
+            <Module
+              text=" Is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's."
-                name="Mr Jason Mraz"
-                role="CEO at Curbside Prophet Inc."
-                profilePicture={Anna}
-              />
-            </div>
+              name="Mr Jason Mraz"
+              role="CEO at Curbside Prophet Inc."
+              profilePicture={Juan}
+            />
+          </div>
+          <div className="md:mt-10 mt-0">
+            <Module
+              text=" Is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's."
+              name="Mr Jason Mraz"
+              role="CEO at Curbside Prophet Inc."
+              profilePicture={Anna}
+            />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 export default Testimonials;
