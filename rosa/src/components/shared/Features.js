@@ -24,10 +24,10 @@ const features = [
 
 const Module = ({ question, answer }) => {
   return (
-    <div className="flex-grow">
-      <Accordion>
+    <div className="flex flex-grow">
+      <Accordion className="w-full">
         <AccordionSummary
-          expandIcon={<IoIosArrowDown color="#0171E3" />}
+          expandIcon={<IoIosArrowDown color="#8d8f8c" />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -43,12 +43,12 @@ const Module = ({ question, answer }) => {
 
 const Features = () => {
   return (
-    <div className="bg-[#F7F7F7] sm:mx-4 mx-2 rounded-2xl">
-      <div className="flex h-fit py-24 max-w-7xl mx-auto px-4 flex-wrap">
-        <div className="flex py-20 max-w-7xl mx-auto px-4 flex-wrap">
-          <div>
+    <div className="bg-[#F7F7F7] sm:mx-4 mx-2 rounded-2xl" >
+      <div className="flex h-fit py-24 max-w-7xl mx-auto px-4 flex-wrap w-full">
+        <div className="flex py-20 max-w-7xl mx-auto sm:px-36 px-0 flex-wrap w-full" >
+          <div className="w-full">
             <h1 className="text-[40px] font-medium mx-auto text-center flex justify-center sm:mb-16 mb-12 text-[#00284F]">
-              We Cover Most <br/> Asked Questions here
+              We Cover Most <br /> Asked Questions here
             </h1>
             <div className="mx-auto flex flex-col space-y-12">
               {features.map((text, index) => (
@@ -56,10 +56,10 @@ const Features = () => {
                   <Module question={text.title} answer={text.description} />
                 </div>
               ))}
-              <Module
+              {/* <Module
                 question="How are you?"
                 answer="I am fine and better each day"
-              />
+              /> */}
             </div>
           </div>
         </div>

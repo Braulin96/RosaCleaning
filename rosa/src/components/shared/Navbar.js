@@ -5,7 +5,7 @@ import Logo from "../../assets/rosaLogo.png";
 
 const Nav = () => {
   return (
-    <>
+    <div className="max-w-7xl mx-auto">
       <Navbar fluid rounded>
         <Navbar.Brand href="https://flowbite-react.com">
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
@@ -43,7 +43,7 @@ const Nav = () => {
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
-    </>
+    </div>
   );
 };
 export default Nav;

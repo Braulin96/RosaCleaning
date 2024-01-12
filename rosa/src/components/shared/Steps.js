@@ -22,7 +22,7 @@ const Module = ({ title, description, icon }) => {
         </div>
         <div className="ml-4">
           <p className="font-medium text-2xl text-[#00284F] mb-1">{title}</p>
-          <p> {description} </p>
+          <p>{description}</p>
         </div>
       </div>
     </div>
@@ -31,13 +31,13 @@ const Module = ({ title, description, icon }) => {
 
 const Steps = () => {
   return (
-    <div className="bg-[#F7F7F7] sm:mx-4 mx-2 rounded-2xl">
-      <div className="flex h-fit py-24 max-w-7xl mx-auto px-4 flex-wrap">
+    <div className="bg-[#fef4f0] bg-opacity-30 sm:mx-4 mx-2 rounded-2xl">
+      <div className="flex sm:py-32 py-20 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="flex">
           <div>
             <div className="flex justify-between">
               <div>
-                <h1 className="text-[40px] font-medium flex sm:mb-16 mb-12 mr-auto text-[#00284F]">
+                <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 mr-auto text-[#00284F]">
                   Unlocking the magic behind our <br />
                   commitment is as easy as 1-2-3-4.
                 </h1>
@@ -50,7 +50,7 @@ const Steps = () => {
                   <HiOutlineDotsVertical
                     color="#0171E3"
                     size={24}
-                    className="ml-5 my-2 opacity-60"
+                    className="ml-5 my-4 opacity-60"
                   />
 
                   <Module
@@ -61,7 +61,7 @@ const Steps = () => {
                   <HiOutlineDotsVertical
                     color="#0171E3"
                     size={24}
-                    className="ml-5 my-2 opacity-60"
+                    className="ml-5 my-4 opacity-60"
                   />
                   <Module
                     title="Payment"
@@ -71,7 +71,7 @@ const Steps = () => {
                   <HiOutlineDotsVertical
                     color="#0171E3"
                     size={24}
-                    className="ml-5 my-2 opacity-60"
+                    className="ml-5 my-4 opacity-60"
                   />
                   <Module
                     title="Service day"
@@ -80,7 +80,7 @@ const Steps = () => {
                   />
                 </div>
               </div>
-              <div className="my-auto h-full text-center justify-center md:flex hidden">
+              <div className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
                 <img className="my-auto h-full flex" width={500} src={Iphone} />
               </div>
             </div>
