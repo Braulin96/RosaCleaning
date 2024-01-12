@@ -9,11 +9,11 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="sm:pt-24 pt-12 pb-12 bg-[#F7F7F7]">
+    <div className="pt-24 pb-6 bg-[#00284F] text-[#d1d2d1]">
       <div className="flex w-full flex-wrap justify-center space-x-8 max-w-7xl mx-auto">
         <div className="flex justify-between flex-grow">
           <div className="">
-            <h1 className="text-[40px] font-bold flex justify-center text-[#00284F] mb-6">
+            <h1 className="text-[40px] font-bold flex justify-center mb-6">
               Get In Touch!
             </h1>
             <div className="flex mb-4">
@@ -53,24 +53,22 @@ const Footer = () => {
           <div>
             <div>
               <p className="text-lg font-semibold mb-2">Business Hours:</p>
-              <p>7:30 am - 8:30 pm, Mon-Sat</p>
-              <p>8 am - 5 pm, Sun</p>
+              <p>7:30am - 8:30pm, Mon-Sat</p>
+              <p>8am - 5pm, Sun</p>
             </div>
             <div>
               <p className="text-lg font-semibold mt-4 mb-2">Location</p>
-              <p>70 M31 Piccadilly Manchester</p>
+              <p>70, M31 Piccadilly Manchester</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="px-10">
-        <div className="flex border-t border-opacity-70 border-[#D1D2D1] max-w-7xl  mt-12 mx-auto">
-          <div className="mx-auto flex flex-wrap gap-y-2 justify-between w-full mt-4">
-            <p className="text-sm">
-              @2023 - Rosa Cleaning Services - All righths reserved
-            </p>
-            <button className="text-sm">Terms and Privacy</button>
-          </div>
+      <div className="flex border-t border-opacity-70 border-[#D1D2D1] max-w-7xl  mt-24 mx-auto">
+        <div className="mx-auto flex flex-wrap gap-y-2 justify-between w-full mt-4">
+          <p className="text-sm">
+            @2023 - Rosa Cleaning Services - All righths reserved
+          </p>
+          <button className="text-sm">Terms and Privacy</button>
         </div>
       </div>
     </div>
