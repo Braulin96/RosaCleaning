@@ -18,9 +18,9 @@ const Footer = () => {
             </h1>
             <div className="flex mb-4">
               <div className="mx-auto flex space-x-4">
-                <FaSquareFacebook size={40} color="#78ccf5" />
-                <RiInstagramFill size={40} color="#78ccf5" />
-                <IoLogoLinkedin size={40} color="#78ccf5" />
+                <FaSquareFacebook size={40}  />
+                <RiInstagramFill size={40}/>
+                <IoLogoLinkedin size={40}/>
               </div>
             </div>
           </div>
