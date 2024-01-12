@@ -8,7 +8,7 @@ import womanCleaningAnimation from "../../assets/cleanLottie.json";
 
 const HeroSection = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="hero">
       <div className="flex justify-around sm:py-32 py-20 max-w-7xl mx-auto px-4 flex-wrap space-y-12">
         <div className="my-auto space-y-4">
           <h1 className="text-[40px] font-semibold">
