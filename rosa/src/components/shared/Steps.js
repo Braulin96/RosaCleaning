@@ -31,7 +31,7 @@ const Module = ({ title, description, icon }) => {
 
 const Steps = () => {
   return (
-    <div className="bg-[#fef4f0] bg-opacity-30 sm:mx-4 mx-2 rounded-2xl">
+    <div className="bg-[#fef4f0] bg-opacity-30 sm:mx-4 mx-2 rounded-2xl" id="steps">
       <div className="flex sm:py-32 py-20 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="flex">
           <div>
