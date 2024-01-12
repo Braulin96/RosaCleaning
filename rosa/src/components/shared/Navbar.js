@@ -1,7 +1,14 @@
 // Note: components:
 import { Navbar } from "flowbite-react";
 //import { HashLink } from "react-router-hash-link";
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+} from "react-scroll";
 // Note: images:
 import Logo from "../../assets/rosaLogo.png";
 
@@ -9,7 +16,7 @@ const Nav = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <Navbar fluid rounded>
-      {/* <HashLink
+        {/* <HashLink
 						//onClick={showNavbar}
 						smooth
 						to="#features"
@@ -31,18 +38,18 @@ const Nav = () => {
             Schedule Now
           </button> */}
           <Link
-          to="test1"
-          spy={true}
-          smooth={true}
-          duration={1000}
-          //onclick={closeMenu}
+            to="test1"
+            spy={true}
+            smooth={true}
+            duration={1000}
+            //onclick={closeMenu}
 
             className="lg:flex hidden px-6 py-2 bg-[#0171E3] rounded-md font-bold text-white hover:bg-opacity-90 sm:w-auto w-full mt-4"
             style={{ margin: "auto" }}
           >
             Schedule Now Test
           </Link>
-         
+
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
