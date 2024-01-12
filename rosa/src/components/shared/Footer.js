@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="pt-24 pb-6 bg-[#00284F] text-[#d1d2d1]">
+    <div className="pt-24 pb-6 bg-[#00284F] text-[#d1d2d1]" id="contact">
       <div className="px-4">
       <div className="flex flex-wrap w-full space-x-8 max-w-7xl mx-auto">
         <div className="flex flex-wrap justify-between w-full gap-x-4 gap-y-8">
