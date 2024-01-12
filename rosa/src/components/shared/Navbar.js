@@ -55,6 +55,7 @@ const Nav = () => {
         <Navbar.Collapse>
           <Navbar.Link
             className="text-[#0171E3]"
+            href="#"
           >
             <Link
               to="hero"
@@ -67,16 +68,48 @@ const Nav = () => {
             </Link>
           </Navbar.Link>
           <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
-            Services
+          <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              //onclick={closeMenu}
+            >
+              Services
+            </Link>
           </Navbar.Link>
           <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
-            Steps
+          <Link
+              to="steps"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              //onclick={closeMenu}
+            >
+              Steps
+            </Link>
           </Navbar.Link>
           <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
-            Pricing
+          <Link
+              to="pricing"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              //onclick={closeMenu}
+            >
+              Pricing
+            </Link>
           </Navbar.Link>
           <Navbar.Link className="text-black hover:!text-[#0171E3]" href="#">
-            Contact
+          <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              //onclick={closeMenu}
+            >
+              Contact
+            </Link>
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
