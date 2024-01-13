@@ -75,7 +75,7 @@ const Nav = () => {
                   spy={true}
                   smooth={true}
                   duration={1000}
-                  onclick={handleScroll}
+                  //onclick={handleScroll}
                 >
                   Home
                 </Link>
@@ -89,7 +89,7 @@ const Nav = () => {
                   spy={true}
                   smooth={true}
                   duration={1000}
-                  onclick={handleScroll}
+                  //onclick={handleScroll}
                 >
                   Services
                 </Link>

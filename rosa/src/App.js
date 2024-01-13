@@ -6,7 +6,7 @@ import OurService from "components/shared/OurService";
 import Steps from "components/shared/Steps";
 import Pricing from "components/shared/Pricing";
 import Features from "components/shared/Features";
-import Dedicating from "components/shared/Dedicating";
+//import Dedicating from "components/shared/Dedicating";
 import Footer from "components/shared/Footer";
 import Testimonials from "components/shared/Testimonials";
 

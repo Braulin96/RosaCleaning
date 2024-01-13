@@ -1,7 +1,6 @@
 import React from "react";
 // Note: images/icons
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import { IoCheckmarkCircle } from "react-icons/io5";
 
 const basicFeatures = [
   {
@@ -59,18 +58,18 @@ const Module = ({ title, className, serviceType, price }) => {
               </div>
             ))}
           </div>
-
           <div className="flex mb-3">
             <p className="font-semibold mx-auto text-3xl text-[#00284F] mb-3">
               {price}
             </p>
           </div>
           <div className="w-full flex justify-center mx-auto">
-            <button
+            <a
+             href="mailto:RosaCleaning@gmail.com"
               className={`${className} text-center font-semibold px-6 py-2 rounded-md md:w-auto w-full`}
             >
               Schedule Now
-            </button>
+            </a>
           </div>
         </div>
       </div>

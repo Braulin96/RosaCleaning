@@ -26,7 +26,6 @@ const Module = ({ icon, title, children }) => {
             <div
               className="m-auto"
               style={iconStyle}
-              
             >
               {React.createElement(icon)}
             </div>
