@@ -67,9 +67,9 @@ const OurService = () => {
             />
           </div>
           <div className="w-full flex justify-center md:my-12 sm:my-6 my-10 mx-auto">
-            <button className="bg-[#0171E3] hover:bg-opacity-90 text-center px-6 py-2 rounded-md text-white font-bold md:w-auto w-full">
+            <a href="mailto:RosaCleaning@gmail.com" className="bg-[#0171E3] hover:bg-opacity-90 text-center px-6 py-2 rounded-md text-white font-bold md:w-auto w-full">
               Know More
-            </button>
+            </a>
           </div>
         </div>
       </div>
