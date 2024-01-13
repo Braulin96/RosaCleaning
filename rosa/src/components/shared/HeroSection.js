@@ -4,7 +4,7 @@ import { ImCheckboxChecked } from "react-icons/im";
 //Note: Images, Lottie:
 import Vector from "../../assets/vector.png";
 import womanCleaningAnimation from "../../assets/cleanLottie.json";
-
+import { Link } from "react-scroll";
 
 const HeroSection = () => {
   return (
@@ -18,19 +18,26 @@ const HeroSection = () => {
             Transforming Spaces, Elevating Lives
           </h1>
           <div className="flex space-x-10">
-            <button className="px-6 py-2 bg-[#0171E3] rounded-md font-bold text-white hover:bg-opacity-90 sm:w-auto w-full mt-4">
+            <a
+              href="mailto:RosaCleaning@gmail.com"
+              className="px-6 py-2 bg-[#0171E3] rounded-md font-bold text-white hover:bg-opacity-90 sm:w-auto w-full mt-4"
+            >
               Let's Talk
-            </button>
-            <button className="px-6 py-2 bg-[#E6F1FC] rounded-md font-bold text-[#0171E3] hover:text-opacity-80  sm:w-auto w-full mt-4">
+            </a>
+            <Link
+              className="px-6 py-2 cursor-pointer bg-[#E6F1FC] rounded-md font-bold text-[#0171E3] hover:text-opacity-80  sm:w-auto w-full mt-4"
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
               Services
-            </button>
+            </Link>
           </div>
           <div className="pt-6">
             <div className="flex gap-x-2">
               <ImCheckboxChecked className="my-auto" color="#E6F1FC" />
-              <p className="text-sm">
-                We’re Local - Family Owned and Operated
-              </p>
+              <p className="text-sm">We’re Local - Family Owned and Operated</p>
             </div>
             <div className="flex gap-x-2 mt-2">
               <ImCheckboxChecked className="my-auto" color="#E6F1FC" />
