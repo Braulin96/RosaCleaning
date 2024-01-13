@@ -43,7 +43,7 @@ const Module = ({ question, answer }) => {
 
 const Features = () => {
   return (
-    <div className="bg-[#F7F7F7] sm:mx-4 mx-2 rounded-2xl" >
+    <div className="bg-[#F7F7F7] sm:mx-4 mx-2 rounded-2xl" id="faqs">
       <div className="flex h-fit py-24 max-w-7xl mx-auto px-4 flex-wrap w-full">
         <div className="flex py-20 max-w-7xl mx-auto sm:px-36 px-0 flex-wrap w-full" >
           <div className="w-full">
