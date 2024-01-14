@@ -56,7 +56,7 @@ const Testimonials = () => {
     <div className="flex h-fit pt-24 pb-32 sm:pt-32 sm:pb-36 max-w-7xl mx-auto px-4 flex-wrap">
       <div className="w-full flex justify-center">
         <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 text-[#00284F] text-center">
-          What Our Clients Says
+          What Our Clients Say
         </h1>
       </div>
       <div className="mx-auto relative md:gap-y-0 gap-y-12 flex flex-col">
