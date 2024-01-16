@@ -2,14 +2,25 @@ import { Button, Navbar } from "flowbite-react";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import "./TestNavbar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const TestNavbar = () => {
   const [clicked, setClicked] = useState(false);
+  const handleClicked = () => {
+	setClicked(false)
+  }
 
+  useEffect(() => {
+    // This effect will run once when the component mounts
+    // Set clicked to false when the component mounts or when any change occurs
+    setClicked(false);
+  }, []); // Empty dependency array means this effect runs once after mount
+
+  console.log("clicked:", clicked);
   return (
     <nav>
-      <a href="index.html">
+      <a href="index.html" className="">
         <svg
           id="logo-36"
           width="40"
@@ -27,15 +38,30 @@ const TestNavbar = () => {
         </svg>
       </a>
 
-      <div>
-        <ul id="navbar" className= {clicked ? "#navbar active" : "navbar"}>
+      <div className="relative">
+        <ul id="navbar" className={clicked ? "#navbar active" : "navbar"}>
+          {clicked ? (
+            <div className="absolute md:hidden flex right-4 top-2">
+              <a onClick={() => setClicked(false)}>
+                <IoMdClose size={35} color="red" className="mb-12" />{" "}
+              </a>
+            </div>
+          ) : (
+            ""
+          )}
+
           <li>
             <a className="active" href="">
               Home
             </a>
           </li>
           <li>
-            <a href="">Shop</a>
+            {/* <a href="">Shop</a> */}
+          
+              <Link onClick={()=>setClicked(false)} to="services" spy={true} smooth={true} duration={700}>
+                Services
+              </Link>
+           
           </li>
           <li>
             <a href="">Blog</a>
@@ -48,12 +74,11 @@ const TestNavbar = () => {
           </li>
         </ul>
       </div>
-
       <div id="mobile">
         <i id="bar">
           {clicked ? (
             <a onClick={() => setClicked(false)}>
-              <IoMdClose />{" "}
+              <IoMdClose />
             </a>
           ) : (
             <a onClick={() => setClicked(true)}>
