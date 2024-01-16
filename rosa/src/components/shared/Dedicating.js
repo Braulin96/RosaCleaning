@@ -1,5 +1,4 @@
-import React from "react";
-
+// this component is created to add video inside the text (not used yet)
 const Dedicating = () => {
   return (
     <div>
