@@ -1,16 +1,16 @@
-// Note: components
+// Note: hooks
 import React, { useState } from "react";
-// Note: Images/Icons
+// Note: images/icons
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { HiBuildingOffice } from "react-icons/hi2";
 import { RiPlantFill } from "react-icons/ri";
 
 const Module = ({ title, description, icon }) => {
+  //state to add styles to icon when hover the module
   const [isHovered, setIsHovered] = useState(false);
-
+   
   const iconStyle = {
     fontSize: 40,
-    //color: isHovered ? "#427087" : "#0171E3",
      color: isHovered ? "#0171E3" : "#a5ddf8",
     transition: "color 2.3s ease",
   };
@@ -18,6 +18,7 @@ const Module = ({ title, description, icon }) => {
   return (
     <>
       <div className="relative md:w-auto w-full">
+        {/*setIsHovered to change the icon color */}
         <div
           onMouseOver={() => setIsHovered(true)}
           onMouseOut={() => setIsHovered(false)}
