@@ -1,9 +1,10 @@
+//Note: hooks:
+import { useState, useEffect } from "react";
 // Note: components:
 import { Navbar } from "flowbite-react";
-import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 // Note: images:
-import Logo from "../../assets/rosaLogo.png";
+import Logo from "assets/rosaLogo.png";
 
 const Nav = () => {
   const [hideNavbar, setHideNavbar] = useState(false);
@@ -36,10 +37,11 @@ const Nav = () => {
     };
   }, [prevScrollY]); // Include prevScrollY in the dependency array
 
+  // style to set the position of the navbar
   const hideNavbarStyle = {
     width: "100%",
     transform: hideNavbar ? "translate(0px, -100px)" : "translate(0px, 0px)",
-    transition: "transform 0.3s ease-in-out", // Adjust the duration and timing function as needed
+    transition: "transform 0.3s ease-in-out",
   };
 
   return (
@@ -70,49 +72,22 @@ const Nav = () => {
             </div>
             <Navbar.Collapse>
               <Navbar.Link className="text-[#0171E3]" href="#">
-                <Link
-                  to="hero"
-                  spy={true}
-                  smooth={true}
-                  duration={1000}
-                  //onclick={handleScroll}
-                >
+                <Link to="hero" spy={true} smooth={true} duration={1000}>
                   Home
                 </Link>
               </Navbar.Link>
-              <Navbar.Link
-                className="text-black hover:!text-[#0171E3]"
-                href="#"
-              >
-                <Link
-                  to="services"
-                  spy={true}
-                  smooth={true}
-                  duration={1000}
-                  //onclick={handleScroll}
-                >
+              <Navbar.Link className="text-black hover:!text-[#0171E3]">
+                <Link to="services" spy={true} smooth={true} duration={1000}>
                   Services
                 </Link>
               </Navbar.Link>
-              <Navbar.Link
-                className="text-black hover:!text-[#0171E3]"
-                href="#"
-              >
+              <Navbar.Link className="text-black hover:!text-[#0171E3]">
                 <Link to="pricing" spy={true} smooth={true} duration={1000}>
                   Pricing
                 </Link>
               </Navbar.Link>
-              <Navbar.Link
-                className="text-black hover:!text-[#0171E3]"
-                href="#"
-              >
-                <Link
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  duration={1000}
-                  //onclick={closeMenu}
-                >
+              <Navbar.Link className="text-black hover:!text-[#0171E3]">
+                <Link to="contact" spy={true} smooth={true} duration={1000}>
                   Contact
                 </Link>
               </Navbar.Link>
