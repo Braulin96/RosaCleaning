@@ -1,5 +1,4 @@
 // Note: components
-import React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -45,7 +44,7 @@ const Features = () => {
   return (
     <div className="bg-[#F7F7F7] sm:mx-4 mx-2 rounded-2xl" id="faqs">
       <div className="flex h-fit py-24 max-w-7xl mx-auto px-4 flex-wrap w-full">
-        <div className="flex py-20 max-w-7xl mx-auto sm:px-36 px-0 flex-wrap w-full" >
+        <div className="flex py-20 max-w-7xl mx-auto sm:px-36 px-0 flex-wrap w-full">
           <div className="w-full">
             <h1 className="text-[40px] font-medium mx-auto text-center flex justify-center sm:mb-16 mb-12 text-[#00284F]">
               We Cover Most <br /> Asked Questions here
@@ -56,10 +55,6 @@ const Features = () => {
                   <Module question={text.title} answer={text.description} />
                 </div>
               ))}
-              {/* <Module
-                question="How are you?"
-                answer="I am fine and better each day"
-              /> */}
             </div>
           </div>
         </div>
