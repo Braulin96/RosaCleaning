@@ -64,7 +64,6 @@ const Footer = () => {
                     smooth={true}
                     duration={1000}
                     className="cursor-pointer"
-                    //onclick={handleScroll}
                   >
                     Services
                   </Link>
@@ -76,7 +75,6 @@ const Footer = () => {
                     smooth={true}
                     duration={1000}
                     className="cursor-pointer"
-                    //onclick={handleScroll}
                   >
                     Pricing
                   </Link>
@@ -88,7 +86,6 @@ const Footer = () => {
                     smooth={true}
                     duration={1000}
                     className="cursor-pointer"
-                    //onclick={handleScroll}
                   >
                     Faq's
                   </Link>
