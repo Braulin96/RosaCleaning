@@ -1,10 +1,10 @@
-//Note: Components
+//Note: components
 import Lottie from "lottie-react";
-import { ImCheckboxChecked } from "react-icons/im";
-//Note: Images, Lottie:
-import Vector from "../../assets/vector.png";
-import womanCleaningAnimation from "../../assets/cleanLottie.json";
 import { Link } from "react-scroll";
+//Note: images, lottie:
+import Vector from "../../assets/vector.png";
+import { ImCheckboxChecked } from "react-icons/im";
+import womanCleaningAnimation from "../../assets/cleanLottie.json";
 
 const HeroSection = () => {
   return (
