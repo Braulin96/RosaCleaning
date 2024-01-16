@@ -1,4 +1,3 @@
-import React from "react";
 // Note: images/icons
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
