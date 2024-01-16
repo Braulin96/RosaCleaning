@@ -1,7 +1,7 @@
 import { Button, Navbar } from "flowbite-react";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
-import "./TestNavbar.css";
+//import "./TestNavbar.css";
 import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
