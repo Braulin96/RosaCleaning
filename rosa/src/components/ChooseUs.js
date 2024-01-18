@@ -21,7 +21,7 @@ const Module = ({ icon, title, children }) => {
   return (
     <>
       <div
-        className="flex space-x-6 max-w-md"
+        className="flex space-x-6 max-w-md text-[#00284F]"
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
       >
@@ -47,9 +47,9 @@ const Module = ({ icon, title, children }) => {
 const ChooseUs = () => {
   return (
     <div className="bg-[#E6F1FC] sm:mx-4 mx-2 rounded-2xl">
-      <div className="flex justify-around py-20 sm:py-36 max-w-7xl mx-auto px-4 flex-wrap">
+      <div className="flex justify-around py-20 sm:pt-32 sm:pb-40 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="w-full my-auto">
-          <h1 className="text-[40px] font-medium mx-auto flex justify-center sm:mb-20 mb-12">
+          <h1 className="text-[40px] font-medium mx-auto flex justify-center sm:mb-20 mb-12 text-[#00284F]">
             Why Choose Us
           </h1>
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-20">
