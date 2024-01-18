@@ -62,48 +62,74 @@ const Testimonials = () => {
         </h1>
       </div>
       <div className="mx-auto relative md:gap-y-0 gap-y-12 flex flex-col">
-         <ScrollAnimation data="fade-up" easing="ease-in-sine" duration="500" delay="1000">
         <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12 md:ml-10 ml-0">
           <div className="md:ml-10 ml-0">
-            <Module
-              text=" Is simply dummy text of the printing and typesetting industry.
+            <ScrollAnimation
+              data="fade-in"
+              easing="ease-in-sine"
+              duration="500"
+              delay="700"
+            >
+              <Module
+                text=" Is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's."
-              name="Mr Jason Mraz"
-              role="CEO at Curbside Prophet Inc."
-              profilePicture={Andrea}
-            />
+                name="Mr Jason Mraz"
+                role="CEO at Curbside Prophet Inc."
+                profilePicture={Andrea}
+              />
+            </ScrollAnimation>
           </div>
           <div className="md:mt-10 mt-0">
-            <Module
-              text=" Is simply dummy text of the printing and typesetting industry.
+            <ScrollAnimation
+              data="fade-in"
+              easing="ease-in-sine"
+              duration="500"
+              delay="1000"
+            >
+              <Module
+                text=" Is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's."
-              name="Mr Jason Mraz"
-              role="CEO at Curbside Prophet Inc."
-              profilePicture={John}
-            />
+                name="Mr Jason Mraz"
+                role="CEO at Curbside Prophet Inc."
+                profilePicture={John}
+              />
+            </ScrollAnimation>
           </div>
         </div>
         <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12">
           <div className="md:ml-10 ml-0">
-            <Module
-              text=" Is simply dummy text of the printing and typesetting industry.
+            <ScrollAnimation
+              data="fade-in"
+              easing="ease-in-sine"
+              duration="500"
+              delay="1300"
+            >
+              <Module
+                text=" Is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's."
-              name="Mr Jason Mraz"
-              role="CEO at Curbside Prophet Inc."
-              profilePicture={Juan}
-            />
+                name="Mr Jason Mraz"
+                role="CEO at Curbside Prophet Inc."
+                profilePicture={Juan}
+              />
+            </ScrollAnimation>
           </div>
           <div className="md:mt-10 mt-0">
-            <Module
-              text=" Is simply dummy text of the printing and typesetting industry.
+            <ScrollAnimation
+              data="fade-in"
+              easing="ease-in-sine"
+              duration="500"
+              delay="1600"
+            >
+              <Module
+                text=" Is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's."
-              name="Mr Jason Mraz"
-              role="CEO at Curbside Prophet Inc."
-              profilePicture={Anna}
-            />
+                name="Mr Jason Mraz"
+                role="CEO at Curbside Prophet Inc."
+                profilePicture={Anna}
+              />
+            </ScrollAnimation>
           </div>
         </div>
-        </ScrollAnimation>
       </div>
     </div>
   );
