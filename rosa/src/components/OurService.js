@@ -25,10 +25,10 @@ const Module = ({ title, description, icon }) => {
         <div
           onMouseOver={() => setIsHovered(true)}
           onMouseOut={() => setIsHovered(false)}
-          className="border border-[#a5ddf8] h-52 md:w-72 w-full flex items-center px-8 rounded-xl"
+          className="border border-[#a5ddf8] h-52 md:w-72 w-full flex items-center px-8 rounded-xl text-[#00284F]"
         >
           <div>
-            <p className="font-medium text-2xl text-[#00284F]">{title}</p>
+            <p className="font-medium text-2xl">{title}</p>
             <p className="mt-2">{description}</p>
           </div>
         </div>
