@@ -26,7 +26,7 @@ const Module = ({ icon, title, children }) => {
         onMouseOut={() => setIsHovered(false)}
       >
         {/* pass icon as a props with the styles depending on the isHovered state */}
-        <ScrollAnimation data="fade-up" duration="1000" delay="500">
+        <ScrollAnimation data="fade-up" duration="500" delay="500">
           <div className="bg-white h-24 my-auto flex shrink-0 aspect-square rounded-full">
             {icon && (
               <div className="m-auto" style={iconStyle}>
