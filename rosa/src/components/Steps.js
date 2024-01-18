@@ -11,7 +11,7 @@ import Iphone from "assets/iPhone.png";
 
 const Module = ({ title, description, icon }) => {
   return (
-    <div className="relative md:w-auto w-full">
+    <div className="relative md:w-auto w-full text-[#00284F]">
       <div className="flex">
         <div className="bg-white h-16 my-auto flex shrink-0 aspect-square rounded-full">
           {icon &&
@@ -48,54 +48,85 @@ const Steps = () => {
                   </h1>
                 </div>
                 <div className="flex flex-col">
-                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="1000">
-                  <Module
-                    title="Order Service"
-                    icon={RiShoppingCartFill}
-                    description="Order our service by calling (here) or by email (here)"
-                  />
-                  <HiOutlineDotsVertical
-                    color="#0171E3"
-                    size={24}
-                    className="ml-5 my-4 opacity-60"
-                  />
+                  <ScrollAnimation
+                    data="fade-in"
+                    easing="ease-in-sine"
+                    duration="500"
+                    delay="600"
+                  >
+                    <Module
+                      title="Order Service"
+                      icon={RiShoppingCartFill}
+                      description="Order our service by calling (here) or by email (here)"
+                    />
+                    <HiOutlineDotsVertical
+                      color="#0171E3"
+                      size={24}
+                      className="ml-5 my-4 opacity-60"
+                    />
                   </ScrollAnimation>
-                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="1500">
-                  <Module
-                    title="Confirmation Call"
-                    icon={IoCallSharp}
-                    description="Call you to confirm the service request and the data)"
-                  />
-                  <HiOutlineDotsVertical
-                    color="#0171E3"
-                    size={24}
-                    className="ml-5 my-4 opacity-60"
-                  />
+                  <ScrollAnimation
+                    data="fade-in"
+                    easing="ease-in-sine"
+                    duration="500"
+                    delay="600"
+                  >
+                    <Module
+                      title="Confirmation Call"
+                      icon={IoCallSharp}
+                      description="Call you to confirm the service request and the data)"
+                    />
+                    <HiOutlineDotsVertical
+                      color="#0171E3"
+                      size={24}
+                      className="ml-5 my-4 opacity-60"
+                    />
                   </ScrollAnimation>
-                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="2000">
-                  <Module
-                    title="Payment"
-                    icon={GiPayMoney}
-                    description="After confirmation the client will make the payment"
-                  />
-                  <HiOutlineDotsVertical
-                    color="#0171E3"
-                    size={24}
-                    className="ml-5 my-4 opacity-60"
-                  />
+                  <ScrollAnimation
+                    data="fade-in"
+                    easing="ease-in-sine"
+                    duration="500"
+                    delay="600"
+                  >
+                    <Module
+                      title="Payment"
+                      icon={GiPayMoney}
+                      description="After confirmation the client will make the payment"
+                    />
+                    <HiOutlineDotsVertical
+                      color="#0171E3"
+                      size={24}
+                      className="ml-5 my-4 opacity-60"
+                    />
                   </ScrollAnimation>
-                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="2500">
-                  <Module
-                    title="Service day"
-                    icon={MdCleaningServices}
-                    description="Proceed to service request"
-                  />
+                  <ScrollAnimation
+                    data="fade-in"
+                    easing="ease-in-sine"
+                    duration="500"
+                    delay="600"
+                  >
+                    <Module
+                      title="Service day"
+                      icon={MdCleaningServices}
+                      description="Proceed to service request"
+                    />
                   </ScrollAnimation>
                 </div>
               </div>
-              <div className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
-                <img className="my-auto h-full flex" width={500} src={Iphone} />
-              </div>
+              <ScrollAnimation
+                data="fade-in"
+                easing="ease-in-sine"
+                duration="600"
+                delay="2200"
+              >
+                <div className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
+                  <img
+                    className="my-auto h-full flex"
+                    width={500}
+                    src={Iphone}
+                  />
+                </div>
+              </ScrollAnimation>
             </div>
           </div>
         </div>

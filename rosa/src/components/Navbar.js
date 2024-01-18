@@ -46,7 +46,7 @@ const Nav = () => {
 
   return (
     <div
-      className="flex justify-center z-50 bg-red-500 w-full"
+      className="flex justify-center z-50 w-full"
       style={{ width: "100%" }}
     >
       <div
@@ -71,22 +71,22 @@ const Nav = () => {
               <Navbar.Toggle />
             </div>
             <Navbar.Collapse>
-              <Navbar.Link className="text-[#0171E3]" href="#">
+              <Navbar.Link className="text-[#0171E3] cursor-pointer" href="#">
                 <Link to="hero" spy={true} smooth={true} duration={1000}>
                   Home
                 </Link>
               </Navbar.Link>
-              <Navbar.Link className="text-black hover:!text-[#0171E3]">
+              <Navbar.Link className="text-[#00284F] hover:!text-[#0171E3] cursor-pointer">
                 <Link to="services" spy={true} smooth={true} duration={1000}>
                   Services
                 </Link>
               </Navbar.Link>
-              <Navbar.Link className="text-black hover:!text-[#0171E3]">
+              <Navbar.Link className="text-[#00284F] hover:!text-[#0171E3] cursor-pointer">
                 <Link to="pricing" spy={true} smooth={true} duration={1000}>
                   Pricing
                 </Link>
               </Navbar.Link>
-              <Navbar.Link className="text-black hover:!text-[#0171E3]">
+              <Navbar.Link className="text-[#00284F] hover:!text-[#0171E3] cursor-pointer">
                 <Link to="contact" spy={true} smooth={true} duration={1000}>
                   Contact
                 </Link>

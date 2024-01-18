@@ -21,12 +21,12 @@ const Module = ({ icon, title, children }) => {
   return (
     <>
       <div
-        className="flex space-x-6 max-w-md"
+        className="flex space-x-6 max-w-md text-[#00284F]"
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
       >
         {/* pass icon as a props with the styles depending on the isHovered state */}
-        <ScrollAnimation data="fade-up" duration="500" delay="500">
+        <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="500">
           <div className="bg-white h-24 my-auto flex shrink-0 aspect-square rounded-full">
             {icon && (
               <div className="m-auto" style={iconStyle}>
@@ -35,10 +35,12 @@ const Module = ({ icon, title, children }) => {
             )}
           </div>
         </ScrollAnimation>
+        <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="500">
         <div className="my-auto">
           <p className="font-medium text-2xl">{title}</p>
           <p className="mt-2">{children}</p>
         </div>
+        </ScrollAnimation>
       </div>
     </>
   );
@@ -47,9 +49,9 @@ const Module = ({ icon, title, children }) => {
 const ChooseUs = () => {
   return (
     <div className="bg-[#E6F1FC] sm:mx-4 mx-2 rounded-2xl">
-      <div className="flex justify-around py-20 sm:py-36 max-w-7xl mx-auto px-4 flex-wrap">
+      <div className="flex justify-around py-20 sm:pt-32 sm:pb-40 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="w-full my-auto">
-          <h1 className="text-[40px] font-medium mx-auto flex justify-center sm:mb-20 mb-12">
+          <h1 className="text-[40px] font-medium mx-auto flex justify-center sm:mb-20 mb-12 text-[#00284F]">
             Why Choose Us
           </h1>
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-20">
