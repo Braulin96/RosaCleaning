@@ -2,10 +2,10 @@
 import { useState } from "react";
 //Note: images, icons:
 import { RiDoubleQuotesL } from "react-icons/ri";
-import Andrea from "../../assets/andreaProfile.jpeg";
-import John from "../../assets/johnProfile.jpeg";
-import Juan from "../../assets/juanProfile.jpeg";
-import Anna from "../../assets/profile.jpeg";
+import Andrea from "assets/andreaProfile.jpeg";
+import John from "assets/johnProfile.jpeg";
+import Juan from "assets/juanProfile.jpeg";
+import Anna from "assets/profile.jpeg";
 
 const Module = ({ name, text, role, profilePicture }) => {
   const [isHovered, setIsHovered] = useState(false);

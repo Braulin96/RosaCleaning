@@ -2,9 +2,9 @@
 import Lottie from "lottie-react";
 import { Link } from "react-scroll";
 //Note: images, lottie:
-import Vector from "../../assets/vector.png";
+import Vector from "assets/vector.png";
 import { ImCheckboxChecked } from "react-icons/im";
-import womanCleaningAnimation from "../../assets/cleanLottie.json";
+import womanCleaningAnimation from "assets/cleanLottie.json";
 
 const HeroSection = () => {
   return (

@@ -1,14 +1,14 @@
 //Note: components
-import Navbar from "components/shared/Navbar";
-import HeroSection from "components/shared/HeroSection";
-import ChooseUs from "components/shared/ChooseUs.js";
-import OurService from "components/shared/OurService";
-import Steps from "components/shared/Steps";
-import Pricing from "components/shared/Pricing";
-import Features from "components/shared/Features";
+import Navbar from "components/Navbar";
+import HeroSection from "components/HeroSection";
+import ChooseUs from "components/ChooseUs.js";
+import OurService from "components/OurService";
+import Steps from "components/Steps";
+import Pricing from "components/Pricing";
+import Features from "components/Features";
 //import Dedicating from "components/shared/Dedicating";
-import Footer from "components/shared/Footer";
-import Testimonials from "components/shared/Testimonials";
+import Footer from "components/Footer";
+import Testimonials from "components/Testimonials";
 
 const App = () => {
   return (

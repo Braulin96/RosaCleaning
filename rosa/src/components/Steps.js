@@ -6,7 +6,7 @@ import { RiShoppingCartFill } from "react-icons/ri";
 import { IoCallSharp } from "react-icons/io5";
 import { GiPayMoney } from "react-icons/gi";
 import { MdCleaningServices } from "react-icons/md";
-import Iphone from "components/assets/images/iPhone.png";
+import Iphone from "assets/iPhone.png";
 
 const Module = ({ title, description, icon }) => {
   return (
