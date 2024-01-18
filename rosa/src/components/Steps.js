@@ -48,7 +48,7 @@ const Steps = () => {
                   </h1>
                 </div>
                 <div className="flex flex-col">
-                  <ScrollAnimation data="fade-in" duration="1000" delay="1000">
+                  <ScrollAnimation data="fade-in" duration="500" delay="1000">
                   <Module
                     title="Order Service"
                     icon={RiShoppingCartFill}
@@ -60,7 +60,7 @@ const Steps = () => {
                     className="ml-5 my-4 opacity-60"
                   />
                   </ScrollAnimation>
-                  <ScrollAnimation data="fade-in" duration="1000" delay="1500">
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="1500">
                   <Module
                     title="Confirmation Call"
                     icon={IoCallSharp}
@@ -72,7 +72,7 @@ const Steps = () => {
                     className="ml-5 my-4 opacity-60"
                   />
                   </ScrollAnimation>
-                  <ScrollAnimation data="fade-in" duration="1000" delay="2000">
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="2000">
                   <Module
                     title="Payment"
                     icon={GiPayMoney}
@@ -84,7 +84,7 @@ const Steps = () => {
                     className="ml-5 my-4 opacity-60"
                   />
                   </ScrollAnimation>
-                  <ScrollAnimation data="fade-in" duration="1000" delay="2500">
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="2500">
                   <Module
                     title="Service day"
                     icon={MdCleaningServices}
