@@ -11,7 +11,7 @@ import Iphone from "assets/iPhone.png";
 
 const Module = ({ title, description, icon }) => {
   return (
-    <div className="relative md:w-auto w-full">
+    <div className="relative md:w-auto w-full text-[#00284F]">
       <div className="flex">
         <div className="bg-white h-16 my-auto flex shrink-0 aspect-square rounded-full">
           {icon &&
