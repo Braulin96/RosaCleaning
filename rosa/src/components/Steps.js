@@ -1,5 +1,8 @@
 // Note: components
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 // Note: images/icons
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { RiShoppingCartFill } from "react-icons/ri";
@@ -9,6 +12,14 @@ import { MdCleaningServices } from "react-icons/md";
 import Iphone from "assets/iPhone.png";
 
 const Module = ({ title, description, icon }) => {
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 900,
+      //once: true,
+      // easing: "ease-out-cubic",
+    });
+  }, []);
   return (
     <div className="relative md:w-auto w-full">
       <div className="flex">
@@ -31,16 +42,27 @@ const Module = ({ title, description, icon }) => {
 
 const Steps = () => {
   return (
-    <div className="bg-[#fef4f0] bg-opacity-30 sm:mx-4 mx-2 rounded-2xl" id="steps">
+    <div
+      className="bg-[#fef4f0] bg-opacity-30 sm:mx-4 mx-2 rounded-2xl"
+      id="steps"
+    >
       <div className="flex sm:py-32 py-20 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="flex">
           <div>
             <div className="flex justify-between">
               <div>
-                <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 mr-auto text-[#00284F]">
-                  Unlocking the magic behind our <br />
-                  commitment is as easy as 1-2-3-4.
-                </h1>
+                <div
+                  // data-aos="fade-up"
+                  // //data-aos-offset="200"
+                  // data-aos-easing="ease-in-sine"
+                  // data-aos-duration="1200"
+                  // data-aos-delay="2000"
+                >
+                  <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 mr-auto text-[#00284F]">
+                    Unlocking the magic behind our <br />
+                    commitment is as easy as 1-2-3-4.
+                  </h1>
+                </div>
                 <div className="flex flex-col">
                   <Module
                     title="Order Service"
@@ -80,7 +102,11 @@ const Steps = () => {
                   />
                 </div>
               </div>
-              <div className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
+              <div data-aos="fade-up"
+                  //data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="1000"
+                  data-aos-delay="500" className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
                 <img className="my-auto h-full flex" width={500} src={Iphone} />
               </div>
             </div>
