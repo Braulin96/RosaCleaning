@@ -3,6 +3,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import ScrollAnimation from "./shared/animation/ScrollAnimation";
 // Note: images/icons
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -30,7 +31,7 @@ const Module = ({ question, answer }) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography> {question}</Typography>
+          <Typography>{question}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>{answer}</Typography>
@@ -52,7 +53,9 @@ const Features = () => {
             <div className="mx-auto flex flex-col space-y-12">
               {features.map((text, index) => (
                 <div key={index} className="">
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="500">
                   <Module question={text.title} answer={text.description} />
+                  </ScrollAnimation>
                 </div>
               ))}
             </div>

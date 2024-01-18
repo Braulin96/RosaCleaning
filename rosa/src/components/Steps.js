@@ -48,7 +48,7 @@ const Steps = () => {
                   </h1>
                 </div>
                 <div className="flex flex-col">
-                  <ScrollAnimation data="fade-in" duration="500" delay="1000">
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="1000">
                   <Module
                     title="Order Service"
                     icon={RiShoppingCartFill}
