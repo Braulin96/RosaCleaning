@@ -2,6 +2,7 @@
 import { useState } from "react";
 // Note: components
 import React from "react";
+import ScrollAnimation from "./shared/animation/ScrollAnimation";
 // Note: Images/Icons
 import { BsShieldLockFill } from "react-icons/bs";
 import { MdOutlineFlashOn } from "react-icons/md";
@@ -25,13 +26,15 @@ const Module = ({ icon, title, children }) => {
         onMouseOut={() => setIsHovered(false)}
       >
         {/* pass icon as a props with the styles depending on the isHovered state */}
-        <div className="bg-white h-24 my-auto flex shrink-0 aspect-square rounded-full">
-          {icon && (
-            <div className="m-auto" style={iconStyle}>
-              {React.createElement(icon)}
-            </div>
-          )}
-        </div>
+        <ScrollAnimation data="fade-up" duration="1000" delay="500">
+          <div className="bg-white h-24 my-auto flex shrink-0 aspect-square rounded-full">
+            {icon && (
+              <div className="m-auto" style={iconStyle}>
+                {React.createElement(icon)}
+              </div>
+            )}
+          </div>
+        </ScrollAnimation>
         <div className="my-auto">
           <p className="font-medium text-2xl">{title}</p>
           <p className="mt-2">{children}</p>
