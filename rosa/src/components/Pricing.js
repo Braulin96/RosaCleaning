@@ -41,10 +41,10 @@ const premiumFeatures = [
 
 const Module = ({ title, className, serviceType, price }) => {
   return (
-    <div className="border border-[#0171E3] border-opacity-20 w-72 h-96 flex justify-center my-auto px-4 rounded-xl shadow-md  hover:shadow-2xl transition-shadow duration-1000 ease-in-out">
+    <div className="border border-[#0171E3] border-opacity-20 w-72 h-96 flex justify-center my-auto px-4 rounded-xl shadow-md  hover:shadow-2xl transition-shadow duration-1000 ease-in-out text-[#00284F]">
       <div className="h-full my-auto flex items-center">
         <div>
-          <p className="font-medium text-2xl text-[#00284F] text-center mb-6">
+          <p className="font-medium text-2xl text-center mb-6">
             {title}
           </p>
           <div className="mb-6 flex flex-col gap-y-2">
@@ -60,7 +60,7 @@ const Module = ({ title, className, serviceType, price }) => {
             ))}
           </div>
           <div className="flex mb-3">
-            <p className="font-semibold mx-auto text-3xl text-[#00284F] mb-3">
+            <p className="font-semibold mx-auto text-3xl mb-3">
               {price}
             </p>
           </div>
@@ -80,7 +80,6 @@ const Module = ({ title, className, serviceType, price }) => {
 
 const Pricing = () => {
   return (
-    <>
       <div
         className="flex h-fit py-20 sm:py-32 max-w-7xl mx-auto px-4 flex-wrap"
         id="pricing"
@@ -122,7 +121,6 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 export default Pricing;
