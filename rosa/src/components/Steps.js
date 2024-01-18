@@ -1,8 +1,6 @@
-// Note: components
-import React, { useEffect } from "react";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
+// Note: component
+import React from "react";
+import ScrollAnimation from "./shared/animation/ScrollAnimation";
 // Note: images/icons
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { RiShoppingCartFill } from "react-icons/ri";
@@ -12,14 +10,6 @@ import { MdCleaningServices } from "react-icons/md";
 import Iphone from "assets/iPhone.png";
 
 const Module = ({ title, description, icon }) => {
-  useEffect(() => {
-    AOS.init({
-      disable: "phone",
-      duration: 900,
-      //once: true,
-      // easing: "ease-out-cubic",
-    });
-  }, []);
   return (
     <div className="relative md:w-auto w-full">
       <div className="flex">
@@ -51,19 +41,14 @@ const Steps = () => {
           <div>
             <div className="flex justify-between">
               <div>
-                <div
-                  // data-aos="fade-up"
-                  // //data-aos-offset="200"
-                  // data-aos-easing="ease-in-sine"
-                  // data-aos-duration="1200"
-                  // data-aos-delay="2000"
-                >
+                <div>
                   <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 mr-auto text-[#00284F]">
                     Unlocking the magic behind our <br />
                     commitment is as easy as 1-2-3-4.
                   </h1>
                 </div>
                 <div className="flex flex-col">
+                  <ScrollAnimation data="fade-in" duration="1000" delay="1500">
                   <Module
                     title="Order Service"
                     icon={RiShoppingCartFill}
@@ -74,7 +59,8 @@ const Steps = () => {
                     size={24}
                     className="ml-5 my-4 opacity-60"
                   />
-
+                  </ScrollAnimation>
+                  <ScrollAnimation data="fade-in" duration="1000" delay="2000">
                   <Module
                     title="Confirmation Call"
                     icon={IoCallSharp}
@@ -85,6 +71,8 @@ const Steps = () => {
                     size={24}
                     className="ml-5 my-4 opacity-60"
                   />
+                  </ScrollAnimation>
+                  <ScrollAnimation data="fade-in" duration="1000" delay="2500">
                   <Module
                     title="Payment"
                     icon={GiPayMoney}
@@ -95,18 +83,17 @@ const Steps = () => {
                     size={24}
                     className="ml-5 my-4 opacity-60"
                   />
+                  </ScrollAnimation>
+                  <ScrollAnimation data="fade-in" duration="1000" delay="3000">
                   <Module
                     title="Service day"
                     icon={MdCleaningServices}
                     description="Proceed to service request"
                   />
+                  </ScrollAnimation>
                 </div>
               </div>
-              <div data-aos="fade-up"
-                  //data-aos-offset="200"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-duration="1000"
-                  data-aos-delay="500" className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
+              <div className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">
                 <img className="my-auto h-full flex" width={500} src={Iphone} />
               </div>
             </div>
