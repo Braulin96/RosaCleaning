@@ -1,3 +1,5 @@
+//Note: components:
+import ScrollAnimation from "./shared/animation/ScrollAnimation";
 // Note: images/icons
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
@@ -64,7 +66,7 @@ const Module = ({ title, className, serviceType, price }) => {
           </div>
           <div className="w-full flex justify-center mx-auto">
             <a
-             href="mailto:RosaCleaning@gmail.com"
+              href="mailto:RosaCleaning@gmail.com"
               className={`${className} text-center font-semibold px-6 py-2 rounded-md md:w-auto w-full`}
             >
               Schedule Now
@@ -79,7 +81,10 @@ const Module = ({ title, className, serviceType, price }) => {
 const Pricing = () => {
   return (
     <>
-      <div className="flex h-fit py-20 sm:py-32 max-w-7xl mx-auto px-4 flex-wrap" id="pricing">
+      <div
+        className="flex h-fit py-20 sm:py-32 max-w-7xl mx-auto px-4 flex-wrap"
+        id="pricing"
+      >
         <div className="w-full">
           <h1 className="text-[40px] font-medium flex sm:mb-24 mb-12 mr-auto text-[#00284F] sm:text-left text-center">
             We offer unparalleled <br />
@@ -87,12 +92,14 @@ const Pricing = () => {
           </h1>
           <div className="flex justify-between gap-x-4 gap-y-12 w-full flex-wrap">
             <div className="mx-auto">
-              <Module
-                serviceType={basicFeatures}
-                title="Basic"
-                price="200$"
-                className="bg-[#E6F1FC] text-[#00284F] hover:text-opacity-80"
-              />
+              <ScrollAnimation data="fade-right" duration="500" delay="1000">
+                <Module
+                  serviceType={basicFeatures}
+                  title="Basic"
+                  price="200$"
+                  className="bg-[#E6F1FC] text-[#00284F] hover:text-opacity-80"
+                />
+              </ScrollAnimation>
             </div>
             <div className="mx-auto">
               <Module
@@ -103,12 +110,14 @@ const Pricing = () => {
               />
             </div>
             <div className="mx-auto">
-              <Module
-                serviceType={premiumFeatures}
-                title="Premium"
-                price="600$"
-                className="bg-[#E6F1FC] text-[#00284F] hover:text-opacity-80"
-              />
+              <ScrollAnimation data="fade-left" duration="500" delay="1000">
+                <Module
+                  serviceType={premiumFeatures}
+                  title="Premium"
+                  price="600$"
+                  className="bg-[#E6F1FC] text-[#00284F] hover:text-opacity-80"
+                />
+              </ScrollAnimation>
             </div>
           </div>
         </div>

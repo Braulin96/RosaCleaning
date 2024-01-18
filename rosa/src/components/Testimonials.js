@@ -1,5 +1,7 @@
-//Note: components:
+//Note: hooks:
 import { useState } from "react";
+//Note: components:
+import ScrollAnimation from "./shared/animation/ScrollAnimation";
 //Note: images, icons:
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Andrea from "assets/andreaProfile.jpeg";
@@ -60,6 +62,7 @@ const Testimonials = () => {
         </h1>
       </div>
       <div className="mx-auto relative md:gap-y-0 gap-y-12 flex flex-col">
+         <ScrollAnimation data="fade-up" easing="ease-in-sine" duration="500" delay="1000">
         <div className="flex md:flex-row flex-col gap-x-10 z-10 md:gap-y-0 gap-y-12 md:ml-10 ml-0">
           <div className="md:ml-10 ml-0">
             <Module
@@ -100,6 +103,7 @@ const Testimonials = () => {
             />
           </div>
         </div>
+        </ScrollAnimation>
       </div>
     </div>
   );

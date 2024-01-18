@@ -1,5 +1,6 @@
-// Note: components
+// Note: component
 import React from "react";
+import ScrollAnimation from "./shared/animation/ScrollAnimation";
 // Note: images/icons
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { RiShoppingCartFill } from "react-icons/ri";
@@ -31,17 +32,23 @@ const Module = ({ title, description, icon }) => {
 
 const Steps = () => {
   return (
-    <div className="bg-[#fef4f0] bg-opacity-30 sm:mx-4 mx-2 rounded-2xl" id="steps">
+    <div
+      className="bg-[#fef4f0] bg-opacity-30 sm:mx-4 mx-2 rounded-2xl"
+      id="steps"
+    >
       <div className="flex sm:py-32 py-20 max-w-7xl mx-auto px-4 flex-wrap">
         <div className="flex">
           <div>
             <div className="flex justify-between">
               <div>
-                <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 mr-auto text-[#00284F]">
-                  Unlocking the magic behind our <br />
-                  commitment is as easy as 1-2-3-4.
-                </h1>
+                <div>
+                  <h1 className="text-[40px] font-medium flex sm:mb-20 mb-12 mr-auto text-[#00284F]">
+                    Unlocking the magic behind our <br />
+                    commitment is as easy as 1-2-3-4.
+                  </h1>
+                </div>
                 <div className="flex flex-col">
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="1000">
                   <Module
                     title="Order Service"
                     icon={RiShoppingCartFill}
@@ -52,7 +59,8 @@ const Steps = () => {
                     size={24}
                     className="ml-5 my-4 opacity-60"
                   />
-
+                  </ScrollAnimation>
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="1500">
                   <Module
                     title="Confirmation Call"
                     icon={IoCallSharp}
@@ -63,6 +71,8 @@ const Steps = () => {
                     size={24}
                     className="ml-5 my-4 opacity-60"
                   />
+                  </ScrollAnimation>
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="2000">
                   <Module
                     title="Payment"
                     icon={GiPayMoney}
@@ -73,11 +83,14 @@ const Steps = () => {
                     size={24}
                     className="ml-5 my-4 opacity-60"
                   />
+                  </ScrollAnimation>
+                  <ScrollAnimation data="fade-in" easing="ease-in-sine" duration="500" delay="2500">
                   <Module
                     title="Service day"
                     icon={MdCleaningServices}
                     description="Proceed to service request"
                   />
+                  </ScrollAnimation>
                 </div>
               </div>
               <div className="my-auto h-full text-center justify-center lg:flex hidden shadow-xl ml-8">

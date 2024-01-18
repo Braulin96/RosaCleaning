@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 //Note: images, lottie:
 import Vector from "assets/vector.png";
 import { ImCheckboxChecked } from "react-icons/im";
-import womanCleaningAnimation from "assets/cleanLottie.json";
+import WomanCleaningAnimation from "assets/cleanLottie.json";
+import ScrollAnimation from "./shared/animation/ScrollAnimation";
 
 const HeroSection = () => {
   return (
@@ -17,6 +18,7 @@ const HeroSection = () => {
             <br />
             Transforming Spaces, Elevating Lives
           </h1>
+
           <div className="flex space-x-10">
             <a
               href="mailto:RosaCleaning@gmail.com"
@@ -34,6 +36,7 @@ const HeroSection = () => {
               Services
             </Link>
           </div>
+
           <div className="pt-6">
             <div className="flex gap-x-2">
               <ImCheckboxChecked className="my-auto" color="#E6F1FC" />
@@ -47,16 +50,18 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="my-auto relative">
-          <img
-            className="sm:w-[30rem] sm:min-w-[20rem] sm:max-w-[30rem] max-w-[20rem] hover:opacity-90"
-            src={Vector}
-            alt="painting"
-          />
-          <div className="absolute top-0">
-            <Lottie animationData={womanCleaningAnimation} loop={true} />
+        <ScrollAnimation data="fade-up" duration="500" delay="500">
+          <div className="my-auto relative">
+            <img
+              className="sm:w-[30rem] sm:min-w-[20rem] sm:max-w-[30rem] max-w-[20rem] hover:opacity-90"
+              src={Vector}
+              alt="painting"
+            />
+            <div className="absolute top-0">
+              <Lottie animationData={WomanCleaningAnimation} loop={true} />
+            </div>
           </div>
-        </div>
+        </ScrollAnimation>
       </div>
     </div>
   );
