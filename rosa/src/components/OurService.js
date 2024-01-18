@@ -54,7 +54,7 @@ const OurService = () => {
             <br /> Your Surrounding Area
           </h1>
           <div className="flex justify-around lg:gap-2 gap-8 flex-wrap">
-            <ScrollAnimation data="fade-right" duration="1500" delay="1000">
+            <ScrollAnimation data="fade-right" duration="500" delay="1000">
             <Module
               title="Home Cleaning"
               description="Elevate your space, embrace the grace of a spotless home."
@@ -66,7 +66,7 @@ const OurService = () => {
               description="Elevate your space, embrace the grace of a spotless home."
               icon={HiBuildingOffice}
             />
-             <ScrollAnimation data="fade-left" duration="1500" delay="1000">
+             <ScrollAnimation data="fade-left" duration="500" delay="1000">
             <Module
               title="Garden Cleaning"
               description="Elevate your space, embrace the grace of a spotless home."
