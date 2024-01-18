@@ -50,7 +50,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <ScrollAnimation data="fade-up" duration="1000" delay="500">
+        <ScrollAnimation data="fade-up" duration="500" delay="500">
           <div className="my-auto relative">
             <img
               className="sm:w-[30rem] sm:min-w-[20rem] sm:max-w-[30rem] max-w-[20rem] hover:opacity-90"
