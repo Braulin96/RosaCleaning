@@ -81,7 +81,3 @@ RosaCleaning is designed to be user-friendly. Simply follow the steps below:
 ## Contributing
 
 Contributions are welcome! Before making major changes, please open an issue to discuss your ideas. Pull requests can then be submitted for review.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
