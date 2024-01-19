@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* to customize scrollbar */
+/* ::-webkit-scrollbar{
+  width: 6px;
+} */
+
+/* track */
+/* ::-webkit-scrollbar-track {
+  background-color: red;
+} */
+/*handle
+ ::-webkit-scrollbar-thumb {
+  background-color: #0171E3;
+  border-radius: 12px 12px;
+} */
+
+/* handler on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: blue;
+} */
