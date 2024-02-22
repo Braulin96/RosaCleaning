@@ -50,34 +50,6 @@ The following npm packages have been installed to enhance the functionality and 
 - [AOS](https://michalsnik.github.io/aos/): Animate on Scroll library for adding elegant scroll animations to your web pages.
 - [React-Scroll](https://www.npmjs.com/package/react-scroll): A library for animating scrolling in React applications.
 
-## Usage
-
-RosaCleaning is designed to be user-friendly. Simply follow the steps below:
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/yourusername/RosaCleaning.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd RosaCleaning
-    ```
-
-3. Install the required packages:
-
-    ```bash
-    npm install
-    ```
-
-4. Start the application:
-
-    ```bash
-    npm start
-    ```
-
 ## Contributing
 
 Contributions are welcome! Before making major changes, please open an issue to discuss your ideas. Pull requests can then be submitted for review.
